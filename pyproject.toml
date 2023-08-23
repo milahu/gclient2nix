@@ -1,0 +1,39 @@
+[project]
+
+name = "gclient2nix"
+
+description = "Generate Nix expressions for projects based on the Google build tools gclient and gn from the chromium depot_tools"
+
+version = "0.1.0"
+
+authors = [
+]
+
+readme = "readme.md"
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+
+dependencies = [
+]
+
+
+
+[project.urls]
+
+"Homepage" = "https://github.com/milahu/gclient2nix"
+
+
+
+[build-system]
+
+build-backend = "flit_core.buildapi"
+
+requires = ["flit_core >=3.2,<4"]
