@@ -199,6 +199,9 @@ class GitRepo(Repo):
     def __init__(self, url, rev):
         super().__init__()
         self.fetcher = 'fetchgit'
+        # TODO add option to keep the ".git" suffix for some urls
+        if url.endswith(".git"):
+            url = url[:-4]
         self.args = {
             "url": url,
             "rev": rev,
@@ -224,6 +227,9 @@ class GitilesRepo(Repo):
     def __init__(self, url, rev):
         super().__init__()
         self.fetcher = 'fetchFromGitiles'
+        # TODO add option to keep the ".git" suffix for some urls
+        if url.endswith(".git"):
+            url = url[:-4]
         self.args = {
             "url": url,
             "rev": rev,

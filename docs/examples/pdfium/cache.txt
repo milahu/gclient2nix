@@ -1,4 +1,4 @@
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/v8/v8.git", "rev": "41ff48bd620584b425618e7f8b51617c46c4d67f"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/v8/v8", "rev": "41ff48bd620584b425618e7f8b51617c46c4d67f"}
 {"hash": "sha256-3UuK5jDiuQJdz0xMIfMW/VtqSHD334H0BWMSEpxULCY=", "store_path": "/nix/store/nd2qysifkm4jss9y7jpy7hp6y9i1hy82-source", "store_path_size": 144610022}
 
 
@@ -8,7 +8,7 @@
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/tools/code_coverage.git", "rev": "bce4cdc2309e9a7f1e0ff1d9310e0d0302aa67e0"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/tools/code_coverage", "rev": "bce4cdc2309e9a7f1e0ff1d9310e0d0302aa67e0"}
 {"hash": "sha256-lgHPYgBy2AcHlEI6lPWJHxcAXvgUlX2Vo7d9GnWv+Nw=", "store_path": "/nix/store/j9s7cgjc078yjg3xs793sgydc7mnnb20-source", "store_path_size": 178324}
 
 
@@ -18,77 +18,77 @@
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/zlib.git", "rev": "526382e41c9c5275dc329db4328b54e4f344a204"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/zlib", "rev": "526382e41c9c5275dc329db4328b54e4f344a204"}
 {"hash": "sha256-5yotUe3WNr8V/ludjEVxIfjKu7YBXj0DcDuh1jMY8Dc=", "store_path": "/nix/store/pail58ccnm765qrkyrlr7fh59v3bd50n-source", "store_path_size": 2040117}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/test_fonts.git", "rev": "7f51783942943e965cd56facf786544ccfc07713"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/test_fonts", "rev": "7f51783942943e965cd56facf786544ccfc07713"}
 {"hash": "sha256-gBnAOW/X2R13AP9507uPsvQ4A2ZUPbvzFcg3Neu3DT8=", "store_path": "/nix/store/628pfgzcl1wy4xk5v1csra3s4jsl6kj0-source", "store_path_size": 71754}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://skia.googlesource.com/skia.git", "rev": "b5f614a8521b36e892798e6f42d85c3c439add38"}
+{"fetcher": "fetchFromGitiles", "url": "https://skia.googlesource.com/skia", "rev": "b5f614a8521b36e892798e6f42d85c3c439add38"}
 {"hash": "sha256-Mb37Jp8x6jQ/FtmmjSqK5CCAcPnUObbVh084pnVsyAI=", "store_path": "/nix/store/p7j2v74dr1idykzx132fgvmdh0xbkkqb-source", "store_path_size": 138589933}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/nasm.git", "rev": "7fc833e889d1afda72c06220e5bed8fb43b2e5ce"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/nasm", "rev": "7fc833e889d1afda72c06220e5bed8fb43b2e5ce"}
 {"hash": "sha256-L+b3X3vsfpY6FSlIK/AHhxhmq2cXd50vND6uT6yn8Qs=", "store_path": "/nix/store/yijk4p7iplna4n68i42jdd1zq3nb997i-source", "store_path_size": 11331174}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/markupsafe.git", "rev": "006709ba3ed87660a17bd4548c45663628f5ed85"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/markupsafe", "rev": "006709ba3ed87660a17bd4548c45663628f5ed85"}
 {"hash": "sha256-BlRxJGXz0IBtUr6wnuhVbDgdUC1lk79gCgswLnnTg+I=", "store_path": "/nix/store/m2znh5j75ajki7zwgrbnf1vlg9q1m9g2-source", "store_path_size": 26948}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/libpng.git", "rev": "805df541c44099bb20d425ac47c666e29b1f7a80"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/libpng", "rev": "805df541c44099bb20d425ac47c666e29b1f7a80"}
 {"hash": "sha256-L1F4FxSG0r71KDZ+T1bFY+utaqR1ZKKvLzHHtwW6Tg0=", "store_path": "/nix/store/15sqg0mj67ri34lwkmzb90887lw4pjsw-source", "store_path_size": 1449113}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo.git", "rev": "30bdb85e302ecfc52593636b2f44af438e05e784"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo", "rev": "30bdb85e302ecfc52593636b2f44af438e05e784"}
 {"hash": "sha256-bcmp8RqQYp4lRI9NfdfYgrAJsDLecJEhgRu9oosB9lQ=", "store_path": "/nix/store/1n94rwkissm9sv07pr6xhm9yjgpjds5k-source", "store_path_size": 6780437}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/jinja2.git", "rev": "515dd10de9bf63040045902a4a310d2ba25213a0"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/jinja2", "rev": "515dd10de9bf63040045902a4a310d2ba25213a0"}
 {"hash": "sha256-fu/VCJaNqzTh+CgfmlltbN9j1MFg3/6eQJgmuuztCD4=", "store_path": "/nix/store/q8rca33jyac1hpzfg2p4isrw1814s278-source", "store_path_size": 488624}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/instrumented_libraries.git", "rev": "032e9c850ab975f7c088a625dcf2256917dbdfa6"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/instrumented_libraries", "rev": "032e9c850ab975f7c088a625dcf2256917dbdfa6"}
 {"hash": "sha256-Bll2ZHRzsh8ydUxF1hJ421UXHuO9CfP398NOSdfTHEU=", "store_path": "/nix/store/ii38q1wlalq76mlamx2l1nlxr9hky8wn-source", "store_path_size": 72097}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/icu.git", "rev": "de4ce0071eb47ed54cbda54869001210cf3a8ae5"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/icu", "rev": "de4ce0071eb47ed54cbda54869001210cf3a8ae5"}
 {"hash": "sha256-5M7acPuJMkoNR+GNN2psMbrgx20c8fiIl3GXa7kP54Q=", "store_path": "/nix/store/ik93j8szrilbv2mzy0agz5z6wphbss59-source", "store_path_size": 216714559}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/googletest.git", "rev": "af29db7ec28d6df1c7f0f745186884091e602e07"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/googletest", "rev": "af29db7ec28d6df1c7f0f745186884091e602e07"}
 {"hash": "sha256-VYRjcM3dDY2FarviXyFMgSkXCqKfWXwtGAj2Msgm7zg=", "store_path": "/nix/store/15j9fji0xb63cxwhnn641gjla2i7v9w2-source", "store_path_size": 3879543}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/fuchsia-gn-sdk.git", "rev": "0d6902558d92fe3d49ba9a8f638ddea829be595b"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/fuchsia-gn-sdk", "rev": "0d6902558d92fe3d49ba9a8f638ddea829be595b"}
 {"hash": "sha256-C+9DcwLo1Vjn+eFJKJ6PnFYQBBCjPqpzyzYO9FoUZBg=", "store_path": "/nix/store/7wa5213ml6n0gp7m6xfnwhywqhj7vgjn-source", "store_path_size": 111765}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/freetype2.git", "rev": "b2584c738f1a92e6369890cff0504cc044315b38"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/freetype2", "rev": "b2584c738f1a92e6369890cff0504cc044315b38"}
 {"hash": "sha256-uWo2v3IYTJGOo6oyEQ424O6+1zYOkAZ6ciAza6pOZKM=", "store_path": "/nix/store/4cq1bnlfr0nfw4awif1k816iyqxc263r-source", "store_path_size": 10996611}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/tools/depot_tools.git", "rev": "59e10115417ac77f47e42c3f13a4f6b58ebe70c2"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/tools/depot_tools", "rev": "59e10115417ac77f47e42c3f13a4f6b58ebe70c2"}
 {"hash": "sha256-EwZGzCDwRujJ+t6kMCL5vUrR1sErhWttO2yVGaYmXI0=", "store_path": "/nix/store/z048mizlzbapsrvmzx6vkc7vw30dfzyq-source", "store_path_size": 4612206}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/abseil-cpp.git", "rev": "2288062eef9624e8b48070ed2447139d3fd4a1c5"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/abseil-cpp", "rev": "2288062eef9624e8b48070ed2447139d3fd4a1c5"}
 {"hash": "sha256-BNqADN/krvWR7Fuo5WROVcTThrz1VSqiTo4XI+5e0HY=", "store_path": "/nix/store/4znxi515kv4jw9r1bds0py4k69ipnq13-source", "store_path_size": 13141649}
 
 
@@ -98,42 +98,42 @@
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libunwind.git", "rev": "e5a9c50e5e0b620a8886df1c4677b12404620fb6"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libunwind", "rev": "e5a9c50e5e0b620a8886df1c4677b12404620fb6"}
 {"hash": "sha256-/OJk3vKbs3KrJdVZ0+XX04OUxlvq4Z84ZiAc1KDVTGI=", "store_path": "/nix/store/qqlmsg9pyz48kkpmkxvrcl6vjnhhs0bf-source", "store_path_size": 780615}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxxabi.git", "rev": "d4760c0af99ccc9bce077960d5ddde4d66146c05"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxxabi", "rev": "d4760c0af99ccc9bce077960d5ddde4d66146c05"}
 {"hash": "sha256-pHNqvcTamOAPnBK4VTxqANjHf67Z9mzxr82Pa4g1sz0=", "store_path": "/nix/store/jq4c1h80bbzb6g9jprrm51yl8zlxkp62-source", "store_path_size": 6476627}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxx.git", "rev": "84fb809dd6dae36d556dc0bb702c6cc2ce9d4b80"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxx", "rev": "84fb809dd6dae36d556dc0bb702c6cc2ce9d4b80"}
 {"hash": "sha256-YP1LAUaV8epDAsd9LOovdXUyzpaLgffOJcGM6VmTaKc=", "store_path": "/nix/store/02njs6war6y7n6x83g0rkiq5r7ps3fad-source", "store_path_size": 48277695}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/clang/tools/clang-format.git", "rev": "e5337933f2951cacd3aeacd238ce4578163ca0b9"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/clang/tools/clang-format", "rev": "e5337933f2951cacd3aeacd238ce4578163ca0b9"}
 {"hash": "sha256-7VvofDDQe+SoMRBfVk26q+C+OPyOE7QH35wVWkfDKxs=", "store_path": "/nix/store/dzf2f888knmra06yg9g555b32i5a77l8-source", "store_path_size": 82965}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/buildtools.git", "rev": "16be42a9ff1f7e4a3e53b93b3adc181fa7ff9161"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/buildtools", "rev": "16be42a9ff1f7e4a3e53b93b3adc181fa7ff9161"}
 {"hash": "sha256-2YwzH4jU4Pu4f1qpNCC/KKLNB4Y4IYxJh0sHCdDzkz4=", "store_path": "/nix/store/irwab7v4ri1zc15gfhpr6z7ab0sz5nc0-source", "store_path_size": 241400}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/build.git", "rev": "336e34d44c88d1160d150bd6c8d93e203a424b42"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/build", "rev": "336e34d44c88d1160d150bd6c8d93e203a424b42"}
 {"hash": "sha256-xnQjWg0m5joMeD2ojU1XtnQojltUkaTSkfWPlBYRkuE=", "store_path": "/nix/store/gms4ph9dvzsm4ivqrvw5km94g8cd2lr5-source", "store_path_size": 6195255}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/base/trace_event/common.git", "rev": "147f65333c38ddd1ebf554e89965c243c8ce50b3"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/base/trace_event/common", "rev": "147f65333c38ddd1ebf554e89965c243c8ce50b3"}
 {"hash": "sha256-WkkSJGdUnKe9KzK0fOCHg5fYjEMUs6VlsdzJRxJKFW4=", "store_path": "/nix/store/h4kz1yvgny4csr3bp9yrjr9mzn0ngiar-source", "store_path_size": 66948}
 
 
 
-{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/base/allocator/partition_allocator.git", "rev": "f91d5ba232cbe61b9740b4101a5b5bea3cd631ed"}
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/base/allocator/partition_allocator", "rev": "f91d5ba232cbe61b9740b4101a5b5bea3cd631ed"}
 {"hash": "sha256-QF0/L6rAl5ERUEW19o8QkK4rBHybUfJk56VD5Wg5RBU=", "store_path": "/nix/store/p86mpjdf7v2pph0yhr9knvs9asqlbjna-source", "store_path_size": 2700823}
 
 
