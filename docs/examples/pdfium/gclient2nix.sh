@@ -1,7 +1,7 @@
 #!/bin/sh
 
-python -m src.gclient2nix --deps-file docs/examples/pdfium/DEPS --output-file docs/examples/pdfium/info.json --relative-paths-prefix src/pdfium
+python -m src.gclient2nix --deps-file docs/examples/pdfium/DEPS --output-file docs/examples/pdfium/sources.json --relative-paths-prefix src/pdfium
 
 exit
 
-python -m src.gclient2nix --deps-file docs/examples/pdfium/DEPS --output-file docs/examples/pdfium/info.json
+python -m src.gclient2nix --deps-file docs/examples/pdfium/DEPS --output-file docs/examples/pdfium/sources.json
