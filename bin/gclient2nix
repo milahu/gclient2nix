@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+bindir="$(dirname "$0")"
+dir="$(dirname "$bindir")"
+
+export PYTHONPATH="$dir/src:$PYTHONPATH"
+
+exec python3 -m gclient2nix "$@"
