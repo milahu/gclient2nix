@@ -7,6 +7,8 @@
 
 # TODO what is "default = vars"?
 
+# TODO make this a generic python module, so we can generate arbitrary info.json files
+
 import traceback
 import csv
 import base64
@@ -299,8 +301,9 @@ def parse_args():
         #epilog='Text at the bottom of help',
     )
     parser.add_argument('--deps-file', required=True, help='path to the "DEPS" file')
-    parser.add_argument('--main-source-path', required=True, help='example: "src/chromium"')
     parser.add_argument('--output-file', required=True)
+    parser.add_argument('--relative-paths-prefix', help='example: "src/chromium", default: empty string')
+    parser.add_argument('--use-relative-paths', help='example: "true", default: use value of "use_relative_paths" from DEPS file')
     parser.add_argument('--cache-dir')
     args = parser.parse_args()
     return args
@@ -372,8 +375,6 @@ def main():
         for platform in ["ios", "chromeos", "android", "mac", "win", "linux"]
     }
 
-    path = args.main_source_path
-
     print("parsing deps from the DEPS file")
 
     #deps_file = self.get_file("DEPS")
@@ -388,7 +389,14 @@ def main():
 
     repo_vars = dict(evaluated["vars"]) | repo_vars
 
-    prefix = f"{path}/" if evaluated.get("use_relative_paths", False) else ""
+    # TODO allow to override more values in evaluated
+
+    if args.use_relative_paths != None:
+        evaluated["use_relative_paths"] = (args.use_relative_paths == "true")
+
+    prefix = ""
+    if args.relative_paths_prefix and evaluated.get("use_relative_paths", False):
+        prefix = args.relative_paths_prefix + "/"
 
     # self is Repo
     #self.deps = {
@@ -445,11 +453,6 @@ def main():
     # save the persistent cache
     print(f"writing persistent cache to {persistent_cache_file}")
     with open(persistent_cache_file, "w") as f:
-        def get_extra_data_str(key):
-            extra_data_str = ""
-            if key in cache_extra_data:
-                extra_data_str = "\n" + json.dumps(cache_extra_data[key])
-            return extra_data_str
         def get_cache_entry_str(key):
             cache_value = {
                 "hash": cache[key],
