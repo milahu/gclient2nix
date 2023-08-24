@@ -301,7 +301,7 @@ def parse_args():
         #epilog='Text at the bottom of help',
     )
     parser.add_argument('--deps-file', required=True, help='path to the "DEPS" file')
-    parser.add_argument('--output-file', required=True)
+    parser.add_argument('--output-file', required=True, help='example: "sources.json"')
     parser.add_argument('--relative-paths-prefix', help='example: "src/chromium", default: empty string')
     parser.add_argument('--use-relative-paths', help='example: "true", default: use value of "use_relative_paths" from DEPS file')
     parser.add_argument('--cache-dir')
