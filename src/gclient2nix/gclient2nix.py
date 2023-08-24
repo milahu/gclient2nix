@@ -479,6 +479,10 @@ if __name__ == '__main__':
 if __name__ == 'src.gclient2nix.gclient2nix':
     main()
 
+# let me call: python -m gclient2nix
+if __name__ == 'gclient2nix.gclient2nix':
+    main()
+
 # TODO nix build retry loop?
 #   nix-shell . -A pdfium
 #   mkdir pdfium-build-shell
