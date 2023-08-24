@@ -36,8 +36,12 @@ nix_build_bin = "nix-build"
 cache = {}
 cache_extra_data = {}
 
+def remove_hashes(dep):
+    return { attr: dep[attr] for attr in dep if attr != "hash" and attr != "sha256" }
+
 def cache_key(dep):
-    return json.dumps({ attr: dep[attr] for attr in dep if attr != "hash" })
+    # TODO sort keys
+    return json.dumps(remove_hashes(dep))
 
 class Repo:
     def __init__(self):
@@ -48,6 +52,17 @@ class Repo:
         self.recurse = False
         self.args = {}
 
+    def get_file(self, filepath):
+        key = cache_key(self.flatten_repr())
+        if not "store_path" in cache_extra_data[key]:
+            print("Repo.get_file: calling Repo.prefetch to set store_path")
+            self.prefetch()
+        if not "store_path" in cache_extra_data[key]:
+            raise Exception("Repo.prefetch failed to set store_path")
+        store_path = cache_extra_data[key]["store_path"]
+        with open(store_path + "/" + filepath) as f:
+            return f.read()
+
     def get_deps(self, repo_vars, path):
         print("evaluating " + json.dumps(self, default = vars), file=sys.stderr)
 
@@ -56,7 +71,7 @@ class Repo:
 
         repo_vars = dict(evaluated["vars"]) | repo_vars
 
-        prefix = f"{path}/" if evaluated.get("use_relative_paths", False) else ""
+        prefix = f"{path}/" if (evaluated.get("use_relative_paths", False) and path != "") else ""
 
         self.deps = {
             prefix + dep_name: repo_from_dep(dep)
@@ -91,9 +106,23 @@ class Repo:
 # sha256-5M7acPuJMkoNR+GNN2psMbrgx20c8fiIl3GXa7kP54Q=
 
     def prefetch(self):
+
+        # TODO remove "hash" and "sha256" values from the cache key
         key = cache_key(self.flatten_repr())
+
         # TODO use only "rev" as cache key (if rev is a git commit hash)
         # TODO lookup by revision. this is risky because sha1 hashes can collide (rarely)
+
+        # allow passing a known hash to avoid refetching
+        if "hash" in self.args:
+            cache[key] = self.args["hash"]
+            print(f"using hash from args: {cache[key]}")
+        elif "sha256" in self.args:
+            cache[key] = self.args["sha256"]
+            print(f"using hash from args: {cache[key]}")
+
+        #raise Exception(f"prefetch: key = {key}")
+
         if not key in cache:
             cmd = [nix_universal_prefetch_bin, self.fetcher]
             for arg_name, arg in self.args.items():
@@ -125,7 +154,7 @@ class Repo:
             def str_nix_value(value):
                 # TODO detect boolean/integer/float/null/path values
                 return '"' + value.replace('"', '\\"') + '"'
-            for arg_name, arg in self.args.items():
+            for arg_name, arg in remove_hashes(self.args).items():
                 nix_expr += f"  {arg_name} = {str_nix_value(arg)};\n"
             fetcher_hash_key = "hash" # some fetchers may require "sha256"
             nix_expr += f"  {fetcher_hash_key} = {str_nix_value(cache[key])};\n"
@@ -300,12 +329,24 @@ def parse_args():
         #description='What the program does',
         #epilog='Text at the bottom of help',
     )
-    parser.add_argument('--deps-file', required=True, help='path to the "DEPS" file')
+
+    # args.main_source_args
+    parser.add_argument('--main-source-args', required=True, action="extend", nargs="+", type=str, help='arguments for the main source. example: fetcher=fetchFromGitiles url=https://chromium.googlesource.com/chromium/src rev=147f65333c38ddd1ebf554e89965c243c8ce50b3')
+
+    # args.main_source_path
+    parser.add_argument('--main-source-path', default="", help='example: "src/chromium", default: empty string')
+
+    # args.output_file
     parser.add_argument('--output-file', required=True, help='example: "sources.json"')
-    parser.add_argument('--relative-paths-prefix', help='example: "src/chromium", default: empty string')
+
+    # args.use_relative_paths
     parser.add_argument('--use-relative-paths', help='example: "true", default: use value of "use_relative_paths" from DEPS file')
+
+    # args.cache_dir
     parser.add_argument('--cache-dir')
+
     args = parser.parse_args()
+
     return args
 
 # persistent cache. ideally use a separate database process to avoid data loss, and to avoid too many disk writes
@@ -375,74 +416,56 @@ def main():
         for platform in ["ios", "chromeos", "android", "mac", "win", "linux"]
     }
 
-    print("parsing deps from the DEPS file")
 
-    #deps_file = self.get_file("DEPS")
-    with open(args.deps_file) as f:
-        deps_file = f.read()
 
-    evaluated = gclient_eval.Parse(deps_file, filename='DEPS')
 
-    #print("evaluated", evaluated)
-    #print("evaluated.vars", evaluated["vars"])
-    #print("evaluated.deps", evaluated["deps"])
 
-    repo_vars = dict(evaluated["vars"]) | repo_vars
+    # parse args.main_source_args
+    main_source_args = {}
+    for key_val in args.main_source_args:
+        idx = key_val.find("=")
+        key = key_val[:idx]
+        val = key_val[(idx + 1):]
+        # TODO parse non-string nix values: bool, int, float, null, path, attrset, list
+        # currently, all values are strings
+        main_source_args[key] = val
 
-    # TODO allow to override more values in evaluated
+    print("main_source_args", main_source_args)
 
-    if args.use_relative_paths != None:
-        evaluated["use_relative_paths"] = (args.use_relative_paths == "true")
+    if not "fetcher" in main_source_args:
+        # TODO better error type. OptionError? ArgumentError?
+        raise ValueError("a value is required for the 'fetcher' main-source-arg. example: --main-source-args fetcher=fetchFromGitiles")
 
-    prefix = ""
-    if args.relative_paths_prefix and evaluated.get("use_relative_paths", False):
-        prefix = args.relative_paths_prefix + "/"
+    main_source_fetcher = main_source_args["fetcher"]
+    del main_source_args["fetcher"]
 
-    # self is Repo
-    #self.deps = {
-    deps = {
-        prefix + dep_name: repo_from_dep(dep)
-        for dep_name, dep in evaluated["deps"].items()
-        if (gclient_eval.EvaluateCondition(dep["condition"], repo_vars) if "condition" in dep else True) and repo_from_dep(dep) != None
+    main_repo = Repo()
+    main_repo.fetcher = main_source_fetcher
+    main_repo.args = main_source_args
+
+    # FIXME repo.recurse is not handled
+    #main_repo.recurse = True
+
+    # fetch the main repo, so we have the DEPS file
+    print("fetching the main source")
+    main_repo.prefetch()
+
+    print("parsing sources of dependencies")
+    print("args.main_source_path:", repr(args.main_source_path))
+    repo_vars = {
+      f"checkout_{platform}": platform == "linux"
+      for platform in ["ios", "chromeos", "android", "mac", "win", "linux"]
     }
+    main_repo.get_deps(repo_vars, args.main_source_path)
 
-    for key in evaluated.get("recursedeps", []):
-        dep_path = prefix + key
-        #if dep_path in self.deps and dep_path != "src/third_party/squirrel.mac":
-        if dep_path in deps and dep_path != "src/third_party/squirrel.mac":
-            #self.deps[dep_path].get_deps(repo_vars, dep_path)
-            deps[dep_path].get_deps(repo_vars, dep_path)
+    print("fetching sources of dependencies")
+    main_repo.prefetch_all()
 
-    print("prefetching deps")
-    #electron_repo.prefetch_all()
-    for [_, dep] in deps.items():
-        dep.prefetch_all()
+    tree = main_repo.flatten(args.main_source_path)
 
     print(f"writing output file: {args.output_file}")
-    #tree = electron_repo.flatten("src/electron")
-    out = {}
-    for dep_path, dep in deps.items():
-        out |= dep.flatten(dep_path)
     with open(args.output_file, "w") as f:
-        f.write(json.dumps(out, indent=2, default = vars) + "\n")
-
-
-
-    if False:
-        electron_repo.prefetch_all()
-
-        tree = electron_repo.flatten("src/electron")
-
-        out[f"{major_version}"] = {
-          "electron_yarn_hash": get_yarn_hash(electron_repo),
-          "chromium_npm_hash": get_npm_hash(electron_repo.deps["src"], "third_party/node/package-lock.json"),
-          "deps": tree,
-          **{key: m[key] for key in ["version", "modules", "chrome"]},
-          "chromium": {
-              "version": m['chrome'],
-              "deps": get_gn_source(electron_repo.deps["src"])
-          }
-        }
+        f.write(json.dumps(tree, indent=2, default = vars) + "\n")
 
     # TODO load the persistent cache again
     # to add cached values from other gclient2nix processes

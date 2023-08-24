@@ -1,4 +1,10 @@
 {
+  "src/pdfium": {
+    "fetcher": "fetchFromGitiles",
+    "hash": "sha256-j3G+5T/9SB++53B10i4HJhnPr+0sC20iDwB7N89ivlw=",
+    "url": "https://pdfium.googlesource.com/pdfium",
+    "rev": "39292f3808ea2e5e656969e00c3ce01abab2b2f1"
+  },
   "src/pdfium/base/allocator/partition_allocator": {
     "fetcher": "fetchFromGitiles",
     "hash": "sha256-QF0/L6rAl5ERUEW19o8QkK4rBHybUfJk56VD5Wg5RBU=",

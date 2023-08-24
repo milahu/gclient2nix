@@ -135,3 +135,8 @@
 
 {"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/base/allocator/partition_allocator.git", "rev": "f91d5ba232cbe61b9740b4101a5b5bea3cd631ed"}
 {"hash": "sha256-QF0/L6rAl5ERUEW19o8QkK4rBHybUfJk56VD5Wg5RBU=", "store_path": "/nix/store/p86mpjdf7v2pph0yhr9knvs9asqlbjna-source", "store_path_size": 2700823}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://pdfium.googlesource.com/pdfium", "rev": "39292f3808ea2e5e656969e00c3ce01abab2b2f1"}
+{"hash": "sha256-j3G+5T/9SB++53B10i4HJhnPr+0sC20iDwB7N89ivlw=", "store_path": "/nix/store/rqafhhjhp0vhmd2vxm8sdq82i1v2jnqa-source", "store_path_size": 33575924}
