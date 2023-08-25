@@ -9,6 +9,11 @@
 
 # TODO make this a generic python module, so we can generate arbitrary info.json files
 
+# TODO split the build into multiple derivations
+# benefits:
+# - granular caching
+# - replace dependencies with compiled packages from nixpkgs
+
 import traceback
 import csv
 import base64
@@ -200,6 +205,7 @@ class GitRepo(Repo):
         super().__init__()
         self.fetcher = 'fetchgit'
         # TODO add option to keep the ".git" suffix for some urls
+        # TODO remove trailing slashes from url?
         if url.endswith(".git"):
             url = url[:-4]
         self.args = {
@@ -228,6 +234,7 @@ class GitilesRepo(Repo):
         super().__init__()
         self.fetcher = 'fetchFromGitiles'
         # TODO add option to keep the ".git" suffix for some urls
+        # TODO remove trailing slashes from url?
         if url.endswith(".git"):
             url = url[:-4]
         self.args = {
