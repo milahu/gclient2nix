@@ -25,6 +25,7 @@ import json
 import sys
 import argparse
 import hashlib
+import shlex
 from codecs import iterdecode
 from datetime import datetime
 from urllib.request import urlopen
@@ -32,8 +33,9 @@ from urllib.request import urlopen
 from .depot_tools import gclient_eval
 from .depot_tools import gclient_utils
 
-#nix_universal_prefetch_bin = "nix-universal-prefetch"
-nix_universal_prefetch_bin = "/nix/store/a0d263m3n24zhdnsmcvhblmsfkdicwlr-nix-universal-prefetch-0.4.0/bin/nix-universal-prefetch"
+nix_universal_prefetch_bin = "nix-universal-prefetch"
+
+nix_bin = "nix"
 
 nix_build_bin = "nix-build"
 
@@ -58,6 +60,7 @@ class Repo:
         self.args = {}
 
     def get_file(self, filepath):
+        # TODO directory vs archive -> extract only needed files or zipmount
         key = cache_key(self.flatten_repr())
         if not "store_path" in cache_extra_data[key]:
             print("Repo.get_file: calling Repo.prefetch to set store_path")
@@ -65,8 +68,39 @@ class Repo:
         if not "store_path" in cache_extra_data[key]:
             raise Exception("Repo.prefetch failed to set store_path")
         store_path = cache_extra_data[key]["store_path"]
-        with open(store_path + "/" + filepath) as f:
-            return f.read()
+        if not os.path.exists(store_path):
+            raise Exception(f"missing store_path {store_path}")
+        if os.path.isdir(store_path):
+            with open(store_path + "/" + filepath) as f:
+                return f.read()
+        # note: this hangs: bsdtar -t -f chromium-124.0.6367.60.tar.zstd | head -n1
+        # get top-level folder, usually "source/"
+        # TODO top-level folder can be missing, for example in 7zip source
+        # $ tar tf /nix/store/anc9r9znhghg3x112r1vcra5k0x7dk1z-chromium-124.0.6367.60.tar.zstd | head -n1
+        # source/
+        cmd = f"tar -t -f {store_path} | head -n1"
+        #print(shlex.join(cmd), file=sys.stderr)
+        print(cmd)
+        toplevel_path = subprocess.check_output(cmd, shell=True, encoding="utf8").strip()
+        print("toplevel_path", repr(toplevel_path))
+        if toplevel_path[-1] != "/":
+            # first file in archive is not a directory
+            # -> assume there is not toplevel dir
+            toplevel_path = ""
+        # "bsdtar --fast-read" is 1000x faster than "tar"
+        # if the extracted file is at the beginning of the archive
+        # https://unix.stackexchange.com/questions/61461/how-to-extract-specific-files-from-tar-gz
+        # https://unix.stackexchange.com/a/775952/295986
+        # $ bsdtar --fast-read -x -f chromium-124.0.6367.60.tar.zstd -- source/DEPS
+        cmd = ["bsdtar", "--fast-read", "-x", "-f", store_path, "--to-stdout", "--", toplevel_path + filepath]
+        print(shlex.join(cmd), file=sys.stderr)
+        file_content = subprocess.check_output(cmd)
+        print("file_content:", repr(file_content[0:100]) + "...")
+        try:
+            file_content = file_content.decode("utf8")
+        except UnicodeDecodeError:
+            pass
+        return file_content # str or bytes
 
     def get_deps(self, repo_vars, path):
         print("evaluating " + json.dumps(self, default = vars), file=sys.stderr)
@@ -113,13 +147,65 @@ class Repo:
     def prefetch(self):
 
         # TODO remove "hash" and "sha256" values from the cache key
+        # TODO rename cache_key to get_cache_key
+        # TODO rename key to cache_key
         key = cache_key(self.flatten_repr())
 
         # TODO use only "rev" as cache key (if rev is a git commit hash)
         # TODO lookup by revision. this is risky because sha1 hashes can collide (rarely)
 
+        if "nixpkgs_attr" in self.args:
+            nixpkgs_attr = self.args["nixpkgs_attr"]
+            del self.args["nixpkgs_attr"]
+            self.args["__nixpkgs_attr"] = nixpkgs_attr
+            print(f"using nixpkgs attr: {nixpkgs_attr}")
+            # example:
+            #   attr: chromium.browser.src
+            #   store_path: /nix/store/anc9r9znhghg3x112r1vcra5k0x7dk1z-chromium-124.0.6367.60.tar.zstd
+
+            # note: we must rename outPath to __outPath, otherwise "nix eval" would reduce the src attribute-set to the outPath string
+            #nix_expr = 'with import <nixpkgs> {}; let src = (' + nixpkgs_attr + '); in builtins.listToAttrs (map (x: { name = "_" + x.name; value = if builtins.isFunction x.value then "<function>" else x.value; }) (lib.attrsToList src))'
+            #nix_expr = 'with import <nixpkgs> {}; let src = (' + nixpkgs_attr + ').overrideAttrs (attrs: { passthru = { inherit attrs; }; }); in builtins.listToAttrs (map (x: { name = "_" + x.name; value = if builtins.isFunction x.value then "<function>" else x.value; }) (lib.attrsToList src.attrs)) // { __outPath = src.outPath; }'
+            # hack: use overrideAttrs to get the arguments for derivation
+            nix_expr = 'with import <nixpkgs> {}; let src = (' + nixpkgs_attr + ').overrideAttrs (attrs: { passthru = { inherit attrs; }; }); in src.attrs // { __outPath = src.outPath; }'
+            cmd = [nix_bin, "eval", "--impure", "--json", "--expr", nix_expr]
+            print(shlex.join(cmd), file=sys.stderr)
+            out = subprocess.check_output(cmd)
+            src_attrs = json.loads(out.decode('utf-8'))
+
+            # remove "_" from keys
+            #src_attrs = { key[1:]: val for key, val in src_attrs.items() }
+            #print(json.dumps(src_attrs, indent=2)); raise 123 # debug
+
+            cache[key] = src_attrs["outputHash"]
+
+            if key not in cache_extra_data:
+                cache_extra_data[key] = {}
+
+            # move __outPath to top
+            out_path = src_attrs["__outPath"]
+            del src_attrs["__outPath"]
+            self.args["__outPath"] = out_path
+
+            cache_extra_data[key]["store_path"] = out_path
+
+            #cache_extra_data[key]["store_path"] = src_attrs["outPath"]
+            #del src_attrs["outPath"]
+
+            #self.args["fetcher"] = "derivation"
+
+            #if src_attrs["builder"].endswith("/pkgs/build-support/fetchurl/builder.sh"):
+            #    self.args["fetcher"] = "fetchurl"
+
+            # copy attrs
+            for key in src_attrs:
+                self.args[key] = src_attrs[key]
+
+            #print(json.dumps(self.args, indent=2)); raise 123 # debug
+
         # allow passing a known hash to avoid refetching
         if "hash" in self.args:
+            # TODO? rename cache to hash_by_cache_key
             cache[key] = self.args["hash"]
             print(f"using hash from args: {cache[key]}")
         elif "sha256" in self.args:
@@ -134,7 +220,7 @@ class Repo:
                 cmd.append(f'--{arg_name}')
                 cmd.append(arg)
 
-            print(" ".join(cmd), file=sys.stderr)
+            print(shlex.join(cmd), file=sys.stderr)
             out = subprocess.check_output(cmd)
             cache[key] = out.decode('utf-8').strip()
 
@@ -165,11 +251,17 @@ class Repo:
             nix_expr += f"  {fetcher_hash_key} = {str_nix_value(cache[key])};\n"
             nix_expr += "}"
             cmd = [nix_build_bin, "-E", nix_expr]
-            print(" ".join(cmd), file=sys.stderr)
-            out = subprocess.check_output(cmd)
+            #cmd += ["--no-out-link"] # no. this is risky because garbage collection. better: change workdir
+            print(shlex.join(cmd), file=sys.stderr)
+            tempdir = os.environ["HOME"] + "/.cache/gclient2nix"
+            os.makedirs(tempdir, exist_ok=True)
+            out = subprocess.check_output(cmd, cwd=tempdir)
             store_path = out.decode('utf-8').strip()
             print("store path:", store_path)
             cache_extra_data[key]["store_path"] = store_path
+            cache_path = tempdir + "/" + os.path.basename(store_path)
+            os.rename(tempdir + "/result", cache_path)
+            print("cache path:", cache_path)
 
             print("getting store path size")
             cmd = ["du", "-sb", store_path]
@@ -227,6 +319,7 @@ class GitHubRepo(Repo):
         }
 
     def get_file(self, filepath):
+        # TODO prefer prefetched file in /nix/store
         return urlopen(f"https://raw.githubusercontent.com/{self.args['owner']}/{self.args['repo']}/{self.args['rev']}/{filepath}").read().decode('utf-8')
 
 class GitilesRepo(Repo):
@@ -273,6 +366,7 @@ class GitilesRepo(Repo):
             self.args['postFetch'] += "rm -r $out/media/test/data; "
 
     def get_file(self, filepath):
+        # TODO prefer prefetched file in /nix/store
         return base64.b64decode(urlopen(f"{self.args['url']}/+/{self.args['rev']}/{filepath}?format=TEXT").read()).decode('utf-8')
 
 def get_yarn_hash(repo, yarn_lock_path = 'yarn.lock'):
@@ -344,7 +438,11 @@ def parse_args():
     )
 
     # args.main_source_args
-    parser.add_argument('--main-source-args', required=True, action="extend", nargs="+", type=str, help='arguments for the main source. example: fetcher=fetchFromGitiles url=https://chromium.googlesource.com/chromium/src rev=147f65333c38ddd1ebf554e89965c243c8ce50b3')
+    parser.add_argument('--main-source-args', action="extend", nargs="+", type=str, help='arguments for the main source. example: fetcher=fetchFromGitiles url=https://chromium.googlesource.com/chromium/src rev=147f65333c38ddd1ebf554e89965c243c8ce50b3')
+
+    # no. instead use: --main-source-args nixpkgs_attr=...
+    ## args.main_source_nixpkgs_attr
+    #parser.add_argument('--main-source-nixpkgs-attr', type=str, help='nixpkgs attribute of the main source. example: chromium.browser.src')
 
     # args.main_source_path
     parser.add_argument('--main-source-path', default="", help='example: "src/chromium", default: empty string')
@@ -359,6 +457,16 @@ def parse_args():
     parser.add_argument('--cache-dir')
 
     args = parser.parse_args()
+
+    """
+    if not args.main_source_args and not args.main_source_nixpkgs_attr:
+        print("error: missing source argument. required is one of --main-source-args or --main-source-nixpkgs-attr")
+        sys.exit(1)
+
+    if args.main_source_args and args.main_source_nixpkgs_attr:
+        print("error: too many source arguments. required is one of --main-source-args or --main-source-nixpkgs-attr")
+        sys.exit(1)
+    """
 
     return args
 
@@ -429,10 +537,6 @@ def main():
         for platform in ["ios", "chromeos", "android", "mac", "win", "linux"]
     }
 
-
-
-
-
     # parse args.main_source_args
     main_source_args = {}
     for key_val in args.main_source_args:
@@ -445,12 +549,16 @@ def main():
 
     print("main_source_args", main_source_args)
 
-    if not "fetcher" in main_source_args:
-        # TODO better error type. OptionError? ArgumentError?
-        raise ValueError("a value is required for the 'fetcher' main-source-arg. example: --main-source-args fetcher=fetchFromGitiles")
-
-    main_source_fetcher = main_source_args["fetcher"]
-    del main_source_args["fetcher"]
+    # TODO move this to Repo.__init__
+    if "nixpkgs_attr" in main_source_args:
+        # nixpkgs_attr returns a nix derivation, not fetcher arguments
+        main_source_fetcher = None
+    else:
+        if not "fetcher" in main_source_args:
+            # TODO better error type. OptionError? ArgumentError?
+            raise ValueError("a value is required for the 'fetcher' main-source-arg. example: --main-source-args fetcher=fetchFromGitiles")
+        main_source_fetcher = main_source_args["fetcher"]
+        del main_source_args["fetcher"]
 
     main_repo = Repo()
     main_repo.fetcher = main_source_fetcher
