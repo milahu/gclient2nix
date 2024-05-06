@@ -1,0 +1,842 @@
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/v8/v8", "rev": "41ff48bd620584b425618e7f8b51617c46c4d67f"}
+{"hash": "sha256-3UuK5jDiuQJdz0xMIfMW/VtqSHD334H0BWMSEpxULCY=", "store_path": "/nix/store/nd2qysifkm4jss9y7jpy7hp6y9i1hy82-source", "store_path_size": 144610022}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/tools/memory", "rev": "2a4c4ba1f4a94231b01280a0c63d3fe4404cc9c2"}
+{"hash": "sha256-jUqG9Up6A8My0llKI9qnv9zQ7sdbvh4/bge/jDeICnw=", "store_path": "/nix/store/2jis6q3a2994vyimfjg6zg630q5p0dqg-source", "store_path_size": 253503}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/tools/code_coverage", "rev": "bce4cdc2309e9a7f1e0ff1d9310e0d0302aa67e0"}
+{"hash": "sha256-lgHPYgBy2AcHlEI6lPWJHxcAXvgUlX2Vo7d9GnWv+Nw=", "store_path": "/nix/store/j9s7cgjc078yjg3xs793sgydc7mnnb20-source", "store_path_size": 178324}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/tools/clang", "rev": "236e66ffd61f3bd710d20d20a67e71a1f1f55cba"}
+{"hash": "sha256-TCjnUQD6ZVszIVZ5RwkhTbRhG0TgH1/43ZWlgyJtvDs=", "store_path": "/nix/store/v50pnsmv2kf4zbypvyakawgz3ccyqc3y-source", "store_path_size": 1824069}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/zlib", "rev": "526382e41c9c5275dc329db4328b54e4f344a204"}
+{"hash": "sha256-5yotUe3WNr8V/ludjEVxIfjKu7YBXj0DcDuh1jMY8Dc=", "store_path": "/nix/store/pail58ccnm765qrkyrlr7fh59v3bd50n-source", "store_path_size": 2040117}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/test_fonts", "rev": "7f51783942943e965cd56facf786544ccfc07713"}
+{"hash": "sha256-gBnAOW/X2R13AP9507uPsvQ4A2ZUPbvzFcg3Neu3DT8=", "store_path": "/nix/store/628pfgzcl1wy4xk5v1csra3s4jsl6kj0-source", "store_path_size": 71754}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://skia.googlesource.com/skia", "rev": "b5f614a8521b36e892798e6f42d85c3c439add38"}
+{"hash": "sha256-Mb37Jp8x6jQ/FtmmjSqK5CCAcPnUObbVh084pnVsyAI=", "store_path": "/nix/store/p7j2v74dr1idykzx132fgvmdh0xbkkqb-source", "store_path_size": 138589933}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/nasm", "rev": "7fc833e889d1afda72c06220e5bed8fb43b2e5ce"}
+{"hash": "sha256-L+b3X3vsfpY6FSlIK/AHhxhmq2cXd50vND6uT6yn8Qs=", "store_path": "/nix/store/yijk4p7iplna4n68i42jdd1zq3nb997i-source", "store_path_size": 11331174}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/markupsafe", "rev": "006709ba3ed87660a17bd4548c45663628f5ed85"}
+{"hash": "sha256-BlRxJGXz0IBtUr6wnuhVbDgdUC1lk79gCgswLnnTg+I=", "store_path": "/nix/store/m2znh5j75ajki7zwgrbnf1vlg9q1m9g2-source", "store_path_size": 26948}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/libpng", "rev": "805df541c44099bb20d425ac47c666e29b1f7a80"}
+{"hash": "sha256-L1F4FxSG0r71KDZ+T1bFY+utaqR1ZKKvLzHHtwW6Tg0=", "store_path": "/nix/store/15sqg0mj67ri34lwkmzb90887lw4pjsw-source", "store_path_size": 1449113}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo", "rev": "30bdb85e302ecfc52593636b2f44af438e05e784"}
+{"hash": "sha256-bcmp8RqQYp4lRI9NfdfYgrAJsDLecJEhgRu9oosB9lQ=", "store_path": "/nix/store/1n94rwkissm9sv07pr6xhm9yjgpjds5k-source", "store_path_size": 6780437}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/jinja2", "rev": "515dd10de9bf63040045902a4a310d2ba25213a0"}
+{"hash": "sha256-fu/VCJaNqzTh+CgfmlltbN9j1MFg3/6eQJgmuuztCD4=", "store_path": "/nix/store/q8rca33jyac1hpzfg2p4isrw1814s278-source", "store_path_size": 488624}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/instrumented_libraries", "rev": "032e9c850ab975f7c088a625dcf2256917dbdfa6"}
+{"hash": "sha256-Bll2ZHRzsh8ydUxF1hJ421UXHuO9CfP398NOSdfTHEU=", "store_path": "/nix/store/ii38q1wlalq76mlamx2l1nlxr9hky8wn-source", "store_path_size": 72097}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/icu", "rev": "de4ce0071eb47ed54cbda54869001210cf3a8ae5"}
+{"hash": "sha256-5M7acPuJMkoNR+GNN2psMbrgx20c8fiIl3GXa7kP54Q=", "store_path": "/nix/store/ik93j8szrilbv2mzy0agz5z6wphbss59-source", "store_path_size": 216714559}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/googletest", "rev": "af29db7ec28d6df1c7f0f745186884091e602e07"}
+{"hash": "sha256-VYRjcM3dDY2FarviXyFMgSkXCqKfWXwtGAj2Msgm7zg=", "store_path": "/nix/store/15j9fji0xb63cxwhnn641gjla2i7v9w2-source", "store_path_size": 3879543}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/fuchsia-gn-sdk", "rev": "0d6902558d92fe3d49ba9a8f638ddea829be595b"}
+{"hash": "sha256-C+9DcwLo1Vjn+eFJKJ6PnFYQBBCjPqpzyzYO9FoUZBg=", "store_path": "/nix/store/7wa5213ml6n0gp7m6xfnwhywqhj7vgjn-source", "store_path_size": 111765}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/freetype2", "rev": "b2584c738f1a92e6369890cff0504cc044315b38"}
+{"hash": "sha256-uWo2v3IYTJGOo6oyEQ424O6+1zYOkAZ6ciAza6pOZKM=", "store_path": "/nix/store/4cq1bnlfr0nfw4awif1k816iyqxc263r-source", "store_path_size": 10996611}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/tools/depot_tools", "rev": "59e10115417ac77f47e42c3f13a4f6b58ebe70c2"}
+{"hash": "sha256-EwZGzCDwRujJ+t6kMCL5vUrR1sErhWttO2yVGaYmXI0=", "store_path": "/nix/store/z048mizlzbapsrvmzx6vkc7vw30dfzyq-source", "store_path_size": 4612206}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/abseil-cpp", "rev": "2288062eef9624e8b48070ed2447139d3fd4a1c5"}
+{"hash": "sha256-BNqADN/krvWR7Fuo5WROVcTThrz1VSqiTo4XI+5e0HY=", "store_path": "/nix/store/4znxi515kv4jw9r1bds0py4k69ipnq13-source", "store_path_size": 13141649}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://pdfium.googlesource.com/pdfium_tests", "rev": "dc2cd9afdd1bad8666072416c340ad1c6a01e388"}
+{"hash": "sha256-K1f+yktlDWMiZ1ns7qIAd1FD6pg4NWikxP2Pb8IvB2c=", "store_path": "/nix/store/wy1fckv5fqkfqj3pzibraapqjl2vlqzp-source", "store_path_size": 444011024}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libunwind", "rev": "e5a9c50e5e0b620a8886df1c4677b12404620fb6"}
+{"hash": "sha256-/OJk3vKbs3KrJdVZ0+XX04OUxlvq4Z84ZiAc1KDVTGI=", "store_path": "/nix/store/qqlmsg9pyz48kkpmkxvrcl6vjnhhs0bf-source", "store_path_size": 780615}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxxabi", "rev": "d4760c0af99ccc9bce077960d5ddde4d66146c05"}
+{"hash": "sha256-pHNqvcTamOAPnBK4VTxqANjHf67Z9mzxr82Pa4g1sz0=", "store_path": "/nix/store/jq4c1h80bbzb6g9jprrm51yl8zlxkp62-source", "store_path_size": 6476627}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxx", "rev": "84fb809dd6dae36d556dc0bb702c6cc2ce9d4b80"}
+{"hash": "sha256-YP1LAUaV8epDAsd9LOovdXUyzpaLgffOJcGM6VmTaKc=", "store_path": "/nix/store/02njs6war6y7n6x83g0rkiq5r7ps3fad-source", "store_path_size": 48277695}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/clang/tools/clang-format", "rev": "e5337933f2951cacd3aeacd238ce4578163ca0b9"}
+{"hash": "sha256-7VvofDDQe+SoMRBfVk26q+C+OPyOE7QH35wVWkfDKxs=", "store_path": "/nix/store/dzf2f888knmra06yg9g555b32i5a77l8-source", "store_path_size": 82965}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/buildtools", "rev": "16be42a9ff1f7e4a3e53b93b3adc181fa7ff9161"}
+{"hash": "sha256-2YwzH4jU4Pu4f1qpNCC/KKLNB4Y4IYxJh0sHCdDzkz4=", "store_path": "/nix/store/irwab7v4ri1zc15gfhpr6z7ab0sz5nc0-source", "store_path_size": 241400}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/build", "rev": "336e34d44c88d1160d150bd6c8d93e203a424b42"}
+{"hash": "sha256-xnQjWg0m5joMeD2ojU1XtnQojltUkaTSkfWPlBYRkuE=", "store_path": "/nix/store/gms4ph9dvzsm4ivqrvw5km94g8cd2lr5-source", "store_path_size": 6195255}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/base/trace_event/common", "rev": "147f65333c38ddd1ebf554e89965c243c8ce50b3"}
+{"hash": "sha256-WkkSJGdUnKe9KzK0fOCHg5fYjEMUs6VlsdzJRxJKFW4=", "store_path": "/nix/store/h4kz1yvgny4csr3bp9yrjr9mzn0ngiar-source", "store_path_size": 66948}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/base/allocator/partition_allocator", "rev": "f91d5ba232cbe61b9740b4101a5b5bea3cd631ed"}
+{"hash": "sha256-QF0/L6rAl5ERUEW19o8QkK4rBHybUfJk56VD5Wg5RBU=", "store_path": "/nix/store/p86mpjdf7v2pph0yhr9knvs9asqlbjna-source", "store_path_size": 2700823}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://pdfium.googlesource.com/pdfium", "rev": "39292f3808ea2e5e656969e00c3ce01abab2b2f1"}
+{"hash": "sha256-j3G+5T/9SB++53B10i4HJhnPr+0sC20iDwB7N89ivlw=", "store_path": "/nix/store/rqafhhjhp0vhmd2vxm8sdq82i1v2jnqa-source", "store_path_size": 33575924}
+
+
+
+{"fetcher": null, "nixpkgs_attr": "chromium.browser.src"}
+{"hash": "sha256-apEniFKhIxPo4nhp9gCU+WpiV/EB40qif4RfE7Uniog=", "store_path": "/nix/store/anc9r9znhghg3x112r1vcra5k0x7dk1z-chromium-124.0.6367.60.tar.zstd"}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxx", "rev": "80307e66e74bae927fb8709a549859e777e3bf0b"}
+{"hash": "sha256-k2bSS8OhVyd0/metFpwFvRCWYOaLEU0Md4AW50GpGTM=", "store_path": "/nix/store/p8y8f9wk07v0i9m216dd79rf3ysiig0b-source", "store_path_size": 50464739}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxxabi", "rev": "ec88f0ab262c5f2426dbf138b92ee9ae5961e431"}
+{"hash": "sha256-AdyX58sg//O2e76HAcRC5DcuiTsd68QS4mNVkPv0Vck=", "store_path": "/nix/store/y3fnz7ai2ahph9gk041l1q8lf38wxwh5-source", "store_path_size": 6520532}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libunwind", "rev": "419b03c0b8f20d6da9ddcb0d661a94a97cdd7dad"}
+{"hash": "sha256-/4/Trextb4F9UMDVrg4uG9QZl6S0H9FiwnL+2S5+ZpE=", "store_path": "/nix/store/xpzdfk823dkjp9kbi083fzck8fwc8rs8-source", "store_path_size": 802916}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/canvas_bench", "rev": "a7b40ea5ae0239517d78845a5fc9b12976bfc732"}
+{"hash": "sha256-svOuyBGKloBLM11xLlWCDsB4PpRjdKTBdW2UEW4JQjM=", "store_path": "/nix/store/rsqajs9q5658w9x98kl76mvgn2w9qv5n-source", "store_path_size": 19422875}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/frame_rate/content", "rev": "c10272c88463efeef6bb19c9ec07c42bc8fe22b9"}
+{"hash": "sha256-t4kcuvH0rkPBkcdiMsoNQaRwU09eU+oSvyHDiAHrKXo=", "store_path": "/nix/store/9bvdx1vrgqrglx0advvd5ripl01b1nz1-source", "store_path_size": 6902847}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/toji/webvr.info", "rev": "c58ae99b9ff9e2aa4c524633519570bf33536248"}
+{"hash": "sha256-BsAPwc4oEWri0TlqhyxqFNqKdfgVSrB0vQyISmYY4eg=", "store_path": "/nix/store/1x9ssa6xi4n9sdr2z8syd0q9c0pr9fvj-source", "store_path_size": 97260882}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/website", "rev": "02057aa20e0dd4598967e3daf2f25c815962ef1c"}
+{"hash": "sha256-2WyiSqza9Mp2G8KHUnrzfikC7hGcUTLu4/W9AD6Zdi4=", "store_path": "/nix/store/4sd8kpl08rx0k2ks3k04h2amdp8yfc2f-source", "store_path_size": 13500736}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/cdm", "rev": "fef0b5aa1bd31efb88dfab804bdbe614f3d54f28"}
+{"hash": "sha256-6J6aSYW0or99VAgMNJJOdJqMJspoG7w1HxDN50MV5bw=", "store_path": "/nix/store/m0r8w2zsmpz7699ap0v9bbydqkpjz7dn-source", "store_path_size": 66688}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://quiche.googlesource.com/quiche", "rev": "9f8738892edd83219d2f83fdd73c7c14d5dbb80d"}
+{"hash": "sha256-BJ3CCKFHOcIgIqnYxfjfOqbRhnt9ycrZfAFRZOLPYZQ=", "store_path": "/nix/store/s3p8xnw1irbhlxkdnl1v21qghmm85l40-source", "store_path_size": 16682733}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/Accessibility-Test-Framework-for-Android", "rev": "4a764c690353ea136c82f1a696a70bf38d1ef5fe"}
+{"hash": "sha256-mzVgoxxBWebesG6okyMxxmO6oH+TITA4o9ucHHMMzkQ=", "store_path": "/nix/store/65432nrfacrglh5wgdwdjvs0clqavmdd-source", "store_path_size": 2170060}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/angle/angle", "rev": "c884489868f982df423d572b6367bdd80110ab8a"}
+{"hash": "sha256-SOLWxwIxoK7P0/lZFmWoJ2sE8/XOlOMxXZmfu5pBw2c=", "store_path": "/nix/store/8lawivq8c65lc0wy08gx67djkschn1kh-source", "store_path_size": 89084714}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/glmark2/glmark2", "rev": "ca8de51fedb70bace5351c6b002eb952c747e889"}
+{"hash": "sha256-L7+zWM0qn8WFhmON7DGvarTsN1YHt1sn5+hazTOZrrk=", "store_path": "/nix/store/vlidbqcrgzfdq1sy1kx7mpffk6fpyypp-source", "store_path_size": 18073312}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/Tencent/rapidjson", "rev": "781a4e667d84aeedbeb8184b7b62425ea66ec59f"}
+{"hash": "sha256-btUl1a/B0sXwf/+hyvCvVJjWqIkXfVYCpHm3TeBuOxk=", "store_path": "/nix/store/g8mfnw84yavkvq9fay51kz3jcssp8qk7-source", "store_path_size": 3448753}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/VK-GL-CTS", "rev": "ec9827528085fcffca353c8d941ec20e3de7aaea"}
+{"hash": "sha256-eQvZmm6aAsI+z++SMM9i/SsREjikIjMLpedzw57eKyA=", "store_path": "/nix/store/vl7icskb3iikl031acrcx08675bjgn2d-source", "store_path_size": 1645698604}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/anonymous-tokens", "rev": "321a40ba18a083feccb8ae2f99a8676bb1702676"}
+{"hash": "sha256-ZKvfil6V4PexxVl/UCW/mUINlCHBTrZnhTB0UhTW0PQ=", "store_path": "/nix/store/kd6fn4540dicy0pm289va2yhvi4ky64a-source", "store_path_size": 576299}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/chromium/content_analysis_sdk", "rev": "9a408736204513e0e95dd2ab3c08de0d95963efc"}
+{"hash": "sha256-f5Jmk1MiGjaRdLun+v/GKVl8Yv9hOZMTQUSxgiJalcY=", "store_path": "/nix/store/dlksmk1b5ndw4gywy50mpyg5g95yqafg-source", "store_path_size": 188142}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/videolan/dav1d", "rev": "006ca01d387ac6652825d6cce1a57b2de67dbf8d"}
+{"hash": "sha256-AA2bcrsW1xFspyl5TqYUJeAwKM06rWTNtXr/uMVIJmw=", "store_path": "/nix/store/zs7sbqiqi9jjck1w2ni8qz7n4fzvpg81-source", "store_path_size": 10962620}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://dawn.googlesource.com/dawn", "rev": "9ae7e7c173d06125da29e1b4bf92e9d708bfa694"}
+{"hash": "sha256-wXh8RsGVzOCWBHBPfwu5FenBGiWHk27IgrzakFYa5X4=", "store_path": "/nix/store/l9sdp2slkpppr8s2mn7mighxibx1zk27-source", "store_path_size": 142829339}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/glfw/glfw", "rev": "62e175ef9fae75335575964c845a302447c012c7"}
+{"hash": "sha256-TwAPRjQxIz3J+zbNxzCp5Tek7MwisxdekMpY5QGsKyg=", "store_path": "/nix/store/s9931512l40y46q28b77gd9x8khqlxdi-source", "store_path_size": 4499838}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/microsoft/DirectXShaderCompiler", "rev": "fbc944027c78ef2247fd409f90e62eac0a619f69"}
+{"hash": "sha256-7mojwA/LuHBts7yPDv8vKJr7V673ojMOzS8xkenXBFk=", "store_path": "/nix/store/pdjw10hrrdqy24ipq8fchm1fm8yyg3zy-source", "store_path_size": 121396280}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/microsoft/DirectX-Headers", "rev": "980971e835876dc0cde415e8f9bc646e64667bf7"}
+{"hash": "sha256-0Miw1Cy/jmOo7bLFBOHuTRDV04cSeyvUEyPkpVsX9DA=", "store_path": "/nix/store/v3xz2vi9gnicw8yv4sk1xxysvxpv5qc4-source", "store_path_size": 2643988}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/OpenGL-Registry", "rev": "5bae8738b23d06968e7c3a41308568120943ae77"}
+{"hash": "sha256-K3PcRIiD3AmnbiSm5TwaLs4Gu9hxaN8Y91WMKK8pOXE=", "store_path": "/nix/store/96hpwk09j9fn17r7l5i92hbwgr975v2c-source", "store_path_size": 182379738}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/EGL-Registry", "rev": "7dea2ed79187cd13f76183c4b9100159b9e3e071"}
+{"hash": "sha256-Z6DwLfgQ1wsJXz0KKJyVieOatnDmx3cs0qJ6IEgSq1A=", "store_path": "/nix/store/8chz9cfkwrg3jj4007wz4ja6ybbxgvam-source", "store_path_size": 7145640}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/gpuweb/cts", "rev": "3e45aee0b16dc724a79a0feb0490e2ddb06c9f0d"}
+{"hash": "sha256-VTYTdvBNxqRzYjEx5ml4LnkDEUGpyvssSzDOndHyYgU=", "store_path": "/nix/store/fc8qx8d6hn6f0n77hk1gngfl8capkqik-source", "store_path_size": 57245003}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/highway", "rev": "8f20644eca693cfb74aa795b0006b6779c370e7a"}
+{"hash": "sha256-kNb9UVcFq2BIf9nftUgN8ciFFCzRCou/sLwVf08jf3E=", "store_path": "/nix/store/03sl8q6ydfqy5k82lnxx7zdvskf24qhp-source", "store_path_size": 4629749}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/benchmark", "rev": "344117638c8ff7e239044fd0fa7085839fc03021"}
+{"hash": "sha256-gztnxui9Fe/FTieMjdvfJjWHjkImtlsHn6fM1FruyME=", "store_path": "/nix/store/iqy75vsc4knxchcgwyh15raz7060vh0i-source", "store_path_size": 997900}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://boringssl.googlesource.com/boringssl", "rev": "4fa4804c8ab4521079af62dba5260a99c34b8a29"}
+{"hash": "sha256-RiDdH26xzoAD2NdTNKDraco9p2jKHXJxbRWI3pUhI78=", "store_path": "/nix/store/cwch88iai9a83qc1d7d9akm6vji5qs1z-source", "store_path_size": 116023366}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/breakpad/breakpad", "rev": "76788faa4ef163081f82273bfca7fae8a734b971"}
+{"hash": "sha256-qAIXZ1jZous0Un0jVkOQ66nA2525NziV3Lbso2/+Z1Y=", "store_path": "/nix/store/7149isl8260wgcm0kc5hlvri2f5qi7r0-source", "store_path_size": 29101315}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/cast_core/public", "rev": "71f51fd6fa45fac73848f65421081edd723297cd"}
+{"hash": "sha256-AalRQhJmornCqmvE2+36J/3LubaA0jr6P1PXy32lX4I=", "store_path": "/nix/store/gwbygfwf9mckaqdn24wlib46vv491w0p-source", "store_path_size": 105589}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/catapult", "rev": "9128ec6d34905512199f953bc60ff75ca29d0cf2"}
+{"hash": "sha256-HhpP5OeGF9in2XEoZMfMCIAFHAqlDvJpfSWa8JfGWzM=", "store_path": "/nix/store/iga04i2wl8179si46ks11zkv19fwal5h-source", "store_path_size": 566619424}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/compact_enc_det", "rev": "ba412eaaacd3186085babcd901679a48863c7dd5"}
+{"hash": "sha256-ySG74Rj2i2c/PltEgHVEDq+N8yd9gZmxNktc56zIUiY=", "store_path": "/nix/store/8dpyv6ybl9wi1hf3pc7m9bbqsknj0hyn-source", "store_path_size": 1381269}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium-variations", "rev": "e78e275e34f94fdf333245137878f0f6482db67d"}
+{"hash": "sha256-YwnqJynhunMvIduUcJ1/nBLabe/WS4RDox+XLMYMA2c=", "store_path": "/nix/store/phfpcy7w43gr4pvdw7lsa0qh88dz5gna-source", "store_path_size": 799722}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/cld_3", "rev": "b48dc46512566f5a2d41118c8c1116c4f96dc661"}
+{"hash": "sha256-C3MOMBUy9jgkT9BAi/Fgm2UH4cxRuwSBEcRl3hzM2Ss=", "store_path": "/nix/store/hjw70p7jynr7gv4ip4axag4gv41jdffz-source", "store_path_size": 2522303}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/colorama", "rev": "3de9f013df4b470069d03d250224062e8cf15c49"}
+{"hash": "sha256-6ZTdPYSHdQOLYMSnE+Tp7PgsVTs3U2awGu9Qb4Rg/tk=", "store_path": "/nix/store/5wgaqjwzfp6ifza25wladffask39nrzy-source", "store_path_size": 199903}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/cpu_features", "rev": "936b9ab5515dead115606559502e3864958f7f6e"}
+{"hash": "sha256-E8LoVzhe+TAmARWZTSuINlsVhzpUJMxPPCGe/dHZcyA=", "store_path": "/nix/store/zwbp66wh31bq8q8avcrc53w7jd782kry-source", "store_path_size": 529917}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/pytorch/cpuinfo", "rev": "aa4b2163b99ac9534194520f70b93eeefb0b3b4e"}
+{"hash": "sha256-9QRj4OA1qWlZujVJ6Z9x3190taVjTCZocM/272eepIs=", "store_path": "/nix/store/wm8sbn5nr1r0gic0a3zshjc7aibh9838-source", "store_path_size": 20189921}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/crc32c", "rev": "fa5ade41ee480003d9c5af6f43567ba22e4e17e6"}
+{"hash": "sha256-urg0bmnfMfHagLPELp4WrNCz1gBZ6DFOWpDue1KsMtc=", "store_path": "/nix/store/xvxp9zway1vdzlwm1l75gh2v6lsnkhqa-source", "store_path_size": 98464}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromiumos/platform2/system_api", "rev": "9a51dc89c4f21362e858b20a6a7cc8adfd7c7238"}
+{"hash": "sha256-dFp4Hy7fldUjXxUTtcyRXdt7zpIP2lchzDKkk0b+iko=", "store_path": "/nix/store/aar578rh896vjrgxvrhmnfga4lng19i9-source", "store_path_size": 916237}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/crossbench", "rev": "acbea986f40578f43c88239c78c797f61842e642"}
+{"hash": "sha256-4gQn5y/Z6ccYA/0VjIQfMpFMkEuPA78jyCgZ+FpmsFs=", "store_path": "/nix/store/vvnnpzk3k06iwarvznkhxhxfa1nkklyr-source", "store_path_size": 1451682}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/tools/depot_tools", "rev": "9c43bc14f1a7404fd4b6f744050d553acca557bf"}
+{"hash": "sha256-YmjhwOjqCRxDhC7P+aRoNN+Vokl7hB4s6hDNFS5gLYo=", "store_path": "/nix/store/6bb25grm3bhjiwjfbfl03p52a77xx6s2-source", "store_path_size": 5127437}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/devtools/devtools-frontend", "rev": "0443776371680847c892adb328aeefae80bc926d"}
+{"hash": "sha256-a4CcrCvMj+gsb9DVJ/GbFhkoCiFUY5O+MWUE0Q3XLH0=", "store_path": "/nix/store/bg20akr400lkxj6p7wzw7bz1d4xgpiq1-source", "store_path_size": 351665421}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/dom-distiller/dist", "rev": "199de96b345ada7c6e7e6ba3d2fa7a6911b8767d"}
+{"hash": "sha256-yuEBD2XQlV3FGI/i7lTmJbCqzeBiuG1Qow8wvsppGJw=", "store_path": "/nix/store/3s5p5klkd23fza85am7nvf9fmix9vl3f-source", "store_path_size": 9479396}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/gitlab.com/libeigen/eigen", "rev": "2a9055b50ed22101da7d77e999b90ed50956fe0b"}
+{"hash": "sha256-tx/XR7xJ7IMh5RMvL8wRo/g+dfD3xcjZkLPSY4D9HaY=", "store_path": "/nix/store/lmvwfjjcybxcvzfdsrnm6jvyb7lp2j12-source", "store_path_size": 16460467}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/farmhash", "rev": "816a4ae622e964763ca0862d9dbd19324a1eaf45"}
+{"hash": "sha256-5n58VEUxa/K//jAfZqG4cXyfxrp50ogWDNYcgiXVHdc=", "store_path": "/nix/store/ivm53ziljskfs2781hjxfldn74xkhii3-source", "store_path_size": 1814529}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg", "rev": "52d8ef3799b2f16b66351dd0972bb0bcee1648ac"}
+{"hash": "sha256-5ynDd2wQ3QtS6SM2X+j3hTKB9aVhGrjoIlGSzy43K8Q=", "store_path": "/nix/store/9lsx9k863wvdnb9xgqlis5vdk6ri43sq-source", "store_path_size": 86932632}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/flac", "rev": "689da3a7ed50af7448c3f1961d1791c7c1d9c85c"}
+{"hash": "sha256-gvTFPNOlBfozptaH7lTb9iD/09AmpdT3kCl9ClszjEs=", "store_path": "/nix/store/86xny3w5j8l7jyawj7j94rzgxr5lf70d-source", "store_path_size": 1769903}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/flatbuffers", "rev": "bcb9ef187628fe07514e57756d05e6a6296f7dc5"}
+{"hash": "sha256-LecJwLDG6szZZ/UOCFD+MDqH3NKawn0sdEwgnMt8wMM=", "store_path": "/nix/store/22rs9l1slxqs1frks31yyyghpvlrc4g0-source", "store_path_size": 12618754}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/fontconfig", "rev": "14d466b30a8ab4a9d789977ed94f2c30e7209267"}
+{"hash": "sha256-W5WIgC6A52kY4fNkbsDEa0o+dfd97Rl5NKfgnIRpI00=", "store_path": "/nix/store/3vs0n27f0jcl43v0ghq5j41987dm3ci9-source", "store_path_size": 2728400}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/Maratyszcza/FP16", "rev": "0a92994d729ff76a58f692d3028ca1b64b145d91"}
+{"hash": "sha256-m2d9bqZoGWzuUPGkd29MsrdscnJRtuIkLIMp3fMmtRY=", "store_path": "/nix/store/yalsmmz2dbz6y8kafq7p6lh6jjnwzaml-source", "store_path_size": 484084}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/gemmlowp", "rev": "13d57703abca3005d97b19df1f2db731607a7dc2"}
+{"hash": "sha256-O5wD8wxgis0qYMaY+xZ21GBDVQFphMRvInCOswS6inA=", "store_path": "/nix/store/k884kw86j9yvgjdsvmydlz43lq1n2jp2-source", "store_path_size": 5450153}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/grpc/grpc", "rev": "822dab21d9995c5cf942476b35ca12a1aa9d2737"}
+{"hash": "sha256-64JEVCx/PCM0dvv7kAQvSjLc0QbRAZVBDzwD/FAV6T8=", "store_path": "/nix/store/sdvalm21zlycpnm4d0rc8wxrjqi4k9ly-source", "store_path_size": 49456682}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/third_party/freetype2", "rev": "f42ce25563b73fed0123d18a2556b9ba01d2c76b"}
+{"hash": "sha256-FtFRJaxyp7vo4EPBiqx05OsKo1UA1g/h+9BjuoijLFA=", "store_path": "/nix/store/w664w84xqzj8gm7kbp6kcvfkk6c5jhk0-source", "store_path_size": 11007315}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/freetype/freetype2-testing", "rev": "7a69b1a2b028476f840ab7d4a2ffdfe4eb2c389f"}
+{"hash": "sha256-2aHPchIK5Oce5+XxdXVCC+8EM6i0XT0rFbjSIVa2L1A=", "store_path": "/nix/store/rj70j21wx4yf6wknhnm65czww0kqzq29-source", "store_path_size": 6944598}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/Maratyszcza/FXdiv", "rev": "63058eff77e11aa15bf531df5dd34395ec3017c8"}
+{"hash": "sha256-LjX5kivfHbqCIA5pF9qUvswG1gjOFo3CMpX0VR+Cn38=", "store_path": "/nix/store/yynx68xvjjxr7ghw0i0ij1qnfv5f3bf1-source", "store_path_size": 42751}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/harfbuzz/harfbuzz", "rev": "155015f4bec434ecc2f94621665844218f05ce51"}
+{"hash": "sha256-VAan6P8PHSq8RsGE4YbI/wCfFAhzl3nJMt0cQBYi5Ls=", "store_path": "/nix/store/gkf8zkay0rv0n9z68n35m0dzj0p630fk-source", "store_path_size": 94044347}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/emoji-segmenter", "rev": "9ba6d25d0d9313569665d4a9d2b34f0f39f9a50e"}
+{"hash": "sha256-oT9mAKoKnrsFsBAeTRfPOXM76HRQQabFAlPpfKUGFhs=", "store_path": "/nix/store/d44rf86yivvv51h7hkn8smv5vdf9wwxx-source", "store_path_size": 25799}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/khaledhosny/ots", "rev": "46bea9879127d0ff1c6601b078e2ce98e83fcd33"}
+{"hash": "sha256-kiUXrXsaGOzPkKh0dVmU1I13WHt0Stzj7QLMqHN9FbU=", "store_path": "/nix/store/0s4xv9sxdzv11ss1gx178129cc8x86j6-source", "store_path_size": 56172277}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/codecs/libgav1", "rev": "f9a93151adf7203c6ab90f3c94bbd5972b7967b8"}
+{"hash": "sha256-tB9Wzjs4Sct7QendDMKkaEE4ddD6ptnNCmj1yYKcQSc=", "store_path": "/nix/store/qv76snxlaz6g335ms4nayhiyayv6gdj2-source", "store_path_size": 7371864}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/googletest", "rev": "c231e6f5b152029dbd5fa4a9e0c04095035aec3f"}
+{"hash": "sha256-mNYS3k2fAc7Q6GlpnO7pkXSkGHfUH1MXuZXkCmwG4q4=", "store_path": "/nix/store/v7c49606c0dif3cxzqrwapgw5cdvm2y1-source", "store_path_size": 4010653}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/hunspell_dictionaries", "rev": "41cdffd71c9948f63c7ad36e1fb0ff519aa7a37e"}
+{"hash": "sha256-67mvpJRFFa9eMfyqFMURlbxOaTJBICnk+gl0b0mEHl8=", "store_path": "/nix/store/smhrjm7dklj8d1p3rfxdwqn0xdf9pbcc-source", "store_path_size": 274793138}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/icu", "rev": "bad7ddbf921358177e56fd723c2f59f8041a370f"}
+{"hash": "sha256-YYoslfgGfmDpSTxtCOmGGfwQg6mVU1IggzAtWRwwcMc=", "store_path": "/nix/store/jp2g6wni33ypabmvnl9zwn91a7y3wjmh-source", "store_path_size": 216728207}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/open-source-parsers/jsoncpp", "rev": "42e892d96e47b1f6e29844cc705e148ec4856448"}
+{"hash": "sha256-bSLNcoYBz3QCt5VuTR056V9mU2PmBuYBa0W6hFg2m8Q=", "store_path": "/nix/store/j3h99l8i598smg0s00g9fmr5zjkg07xj-source", "store_path_size": 848461}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/leveldb", "rev": "068d5ee1a3ac40dabd00d211d5013af44be55bea"}
+{"hash": "sha256-TTX2FrmcWsgqrh4uzqMyGnnnG51cVC2ILfdLxD65MLY=", "store_path": "/nix/store/c45l0vgpp7sxn80wsd56ffw16ljcwc8a-source", "store_path_size": 991412}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/compiler-rt/lib/fuzzer", "rev": "758bd21f103a501b362b1ca46fa8fcb692eaa303"}
+{"hash": "sha256-T0dO+1A0r6kLFoleMkY8heu80biPntCpvA6YfqA7b+E=", "store_path": "/nix/store/632gjckda5ikdc3qqicc724b70v0slvg-source", "store_path_size": 472088}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/fuzztest", "rev": "bddcd9f77ba0a81a99ce50bcadf5149efe545df0"}
+{"hash": "sha256-utl9uwFqMqDW9ll9/3lh3rfjmPHlv5sx/enQuPffQZ8=", "store_path": "/nix/store/ypfbrb9lszrr0vahq8mii0lxvqpp6mqr-source", "store_path_size": 3127851}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/libaddressinput", "rev": "e8712e415627f22d0b00ebee8db99547077f39bd"}
+{"hash": "sha256-xvUUQSPrvqUp5DI9AqlRTWurwDW087c6v4RvI+4sfOQ=", "store_path": "/nix/store/d4mvhw6z2gb4n83fdfa1i68drxdfmw4z-source", "store_path_size": 4467759}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://aomedia.googlesource.com/aom", "rev": "158761dfb40e77f3a54c3b14a596112837baa24b"}
+{"hash": "sha256-zgtNjrQE+fzr8Aye0rAkQR5enzfacCAsRbC3crUrMQ4=", "store_path": "/nix/store/svhmw7ljlq6jf4wsva6dzlfrhvgr7k7m-source", "store_path_size": 30725924}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/AOMediaCodec/libavif", "rev": "43ec9ace31c6ca11efddddb61b94b744450d46e2"}
+{"hash": "sha256-moVf7i0gZ/KW53ACcVIWKWNL0oAimOSU1m5IdQHz6z8=", "store_path": "/nix/store/nkhc7pcp9kr58x4gsflzrdg5q405px9s-source", "store_path_size": 18925042}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://aomedia.googlesource.com/libavifinfo", "rev": "b496868f7c3fd17dfeeecc0364fe37e19edd548a"}
+{"hash": "sha256-UAc4iYWrKWteH98hD3QLkD3JWmV/rsvWhFIVJN7tc+Q=", "store_path": "/nix/store/ckdmlmgsvaia2pzivbzymfjbn6csn8cn-source", "store_path_size": 133375}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/nearby-connections", "rev": "33e682f24427a0eb634bd3186fe3c6fd96bd6768"}
+{"hash": "sha256-YotKuKutnjuphwiElfQO6qpoNLhZGP6bqWZnW3Zv6QI=", "store_path": "/nix/store/w5k31b1davqccskyrd4ry0lai2691mp2-source", "store_path_size": 74988513}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://beto-core.googlesource.com/beto-core", "rev": "8bd72cfb219344308ee857bcbe65a27fe91acfe8"}
+{"hash": "sha256-7GkqH4hgTVmISjUy/Km/X28tBSsiMs3JRnDmol1zaag=", "store_path": "/nix/store/m091lyfvbdq4i3cmx4mx3v7g4i1xxy6a-source", "store_path_size": 9066751}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/securemessage", "rev": "fa07beb12babc3b25e0c5b1f38c16aa8cb6b8f84"}
+{"hash": "sha256-GS4ccnuiqxMs/LVYAtvSlVAYFp4a5GoZsxcriTX3k78=", "store_path": "/nix/store/rc5x2w9rkvr0x4b5nipgrahns0lzpv9y-source", "store_path_size": 234576}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/WebKit/Speedometer", "rev": "8d67f28d0281ac4330f283495b7f48286654ad7d"}
+{"hash": "sha256-qMQ4naX+4uUu3vtzzinjkhxX9/dNoTwj6vWCu4FdQmU=", "store_path": "/nix/store/w5fi5n75s9hgn1prs5x7bss1linp2w60-source", "store_path_size": 61013581}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/ukey2", "rev": "0275885d8e6038c39b8a8ca55e75d1d4d1727f47"}
+{"hash": "sha256-aaLs6ZS+CdBlCJ6ZhsmdAPFxiBIij6oufsDcNeRSV1E=", "store_path": "/nix/store/icyyqf4qqhqngqijyw0xjf3qk6r9v3y8-source", "store_path_size": 549372}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/google3/cros_components", "rev": "a254b37189cf97cfc76634644e58be511aefb69a"}
+{"hash": "sha256-w2VosAdg+GtalFaGxDB8FB2w7498PMudsXxX4SpJqYE=", "store_path": "/nix/store/1cfz64h1q3r4l2fmdmamagzn9yqvrmvi-source", "store_path_size": 578061}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromiumos/third_party/libdrm", "rev": "98e1db501173303e58ef6a1def94ab7a2d84afc1"}
+{"hash": "sha256-NUxS2rBJ0nFblvHRQUfKT933+DAws5RUTDb+RLxRF4M=", "store_path": "/nix/store/f3dr9v1mnk6nvfgairb4ypxg7lz72g6x-source", "store_path_size": 3538399}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/libexpat/libexpat", "rev": "441f98d02deafd9b090aea568282b28f66a50e36"}
+{"hash": "sha256-FXTDGAK03jc2wvazhRKqtsFRKZUYS/9HLpZNp4JfZJI=", "store_path": "/nix/store/m1zacskc3bfzii0lgb9j783j1v2zfn5b-source", "store_path_size": 85740109}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromiumos/platform2/libipp", "rev": "2209bb84a8e122dab7c02fe66cc61a7b42873d7f"}
+{"hash": "sha256-gxU92lHLd6uxO8T3QWhZIK0hGy97cki705DV0VimCPY=", "store_path": "/nix/store/czldgkb2j3absrd1w5i5cml496rnm9dr-source", "store_path_size": 667460}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo", "rev": "9b894306ec3b28cea46e84c32b56773a98c483da"}
+{"hash": "sha256-+t75ZAdOXc7Nd1/8zEQLX+enZb8upqIQuR6qzb9z7Cg=", "store_path": "/nix/store/5pnmf5sz74hh4jhcr2i6qw1r5vnz1pcq-source", "store_path_size": 6780460}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/liblouis-github", "rev": "9700847afb92cb35969bdfcbbfbbb74b9c7b3376"}
+{"hash": "sha256-EI/uaHXe0NlqdEw764q0SjerThYEVLRogUlmrsZwXnY=", "store_path": "/nix/store/2aakbv0rmsdrjqm6m2vwr9bv36ys5bn4-source", "store_path_size": 81498177}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/libphonenumber", "rev": "140dfeb81b753388e8a672900fb7a971e9a0d362"}
+{"hash": "sha256-3hSnTFTD3KAdbyxfKg12qbIYTmw6YlTCH64gMP/HUJo=", "store_path": "/nix/store/197nc04cxiy7y8c77zsvyii9mk7kd5i0-source", "store_path_size": 93198322}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/libprotobuf-mutator", "rev": "a304ec48dcf15d942607032151f7e9ee504b5dcf"}
+{"hash": "sha256-ZyPweW+V5foxFQwjjMLkaRUo+FNV+kEDGIH/4oRV614=", "store_path": "/nix/store/yngsdq33smc1b0vg1nc7fzyn674r1hx6-source", "store_path_size": 186482}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/libsrtp", "rev": "5b7c744eb8310250ccc534f3f86a2015b3887a0a"}
+{"hash": "sha256-pfLFh2JGk/g0ZZxBKTaYW9/PBpkCm0rtJeyNePUMTTc=", "store_path": "/nix/store/116byy3rdvs7kmk89cw7242g8pwspv9w-source", "store_path_size": 804037}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/aosp/platform/system/core/libsync", "rev": "f4f4387b6bf2387efbcfd1453af4892e8982faf6"}
+{"hash": "sha256-Mkl6C1LxF3RYLwYbxiSfoQPt8QKFwQWj/Ati2sNJ32E=", "store_path": "/nix/store/y3vs7616xyszamhvfm3pd70xzzialbgv-source", "store_path_size": 32588}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/webm/libvpx", "rev": "19832b1702d5b0adf616a0e080abd5207c8445b5"}
+{"hash": "sha256-5IsUUvhcKKiWJFetS29+S7Wiz5JwqRZGK2t2ehld/M4=", "store_path": "/nix/store/pqxr6phpb4dzwxbx2lzwsqm7sd94l71j-source", "store_path_size": 24492234}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/webm/libwebm", "rev": "e4fbea0c9751ae8aa86629b197a28d8276a2b0da"}
+{"hash": "sha256-u/5nkJed0DzdhR5OLL2kIhZhOnrbyzL1Kx37vV/jcEo=", "store_path": "/nix/store/nck9041zfjvw3bwpv238dpyb9337jzp4-source", "store_path_size": 2724999}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/webm/libwebp", "rev": "ca332209cb5567c9b249c86788cb2dbf8847e760"}
+{"hash": "sha256-Wa33opOFgcmYtycezDUt2f6PqZBse6xYB5kLuSaw95o=", "store_path": "/nix/store/cqapifqdfvkkzvl95wm3ybv2j879gjga-source", "store_path_size": 7358557}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/libyuv/libyuv", "rev": "a6a2ec654b1be1166b376476a7555c89eca0c275"}
+{"hash": "sha256-hD5B9fPNwf8M98iS/PYeUJgJxtBvvf2BrrlnBNYXSg0=", "store_path": "/nix/store/1mbd5vj7hkq4y0qlv5bnv1n82d48w4gn-source", "store_path_size": 5188165}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/linux-syscall-support", "rev": "ce877209e11aa69dcfffbd53ef90ea1d07136521"}
+{"hash": "sha256-hE8uZf9Fst66qJkoVYChiB8G41ie+k9M4X0W+5JUSdw=", "store_path": "/nix/store/z5qc7h77jk7vxi1bdnxdlr6j1dqpjr1k-source", "store_path_size": 261307}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/material-foundation/material-color-utilities", "rev": "13434b50dcb64a482cc91191f8cf6151d90f5465"}
+{"hash": "sha256-Y85XU+z9W6tvmDNHJ/dXQnUKXvvDkO3nH/kUJRLqbc4=", "store_path": "/nix/store/kids2hw6aail0fs6p54jpmdi25y03039-source", "store_path_size": 3865482}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromiumos/platform/minigbm", "rev": "3018207f4d89395cc271278fb9a6558b660885f5"}
+{"hash": "sha256-9HwvjTETerbQ7YKXH9kUB2eWa8PxGWMAJfx1jAluhrs=", "store_path": "/nix/store/gajbvbndd0wr6y3dmign2gwcyapyvd27-source", "store_path_size": 586600}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/nasm", "rev": "f477acb1049f5e043904b87b825c5915084a9a29"}
+{"hash": "sha256-SiRXHsUlWXtH6dbDjDjqNAm105ibEB3jOfNtQAM4CaY=", "store_path": "/nix/store/gnn2zl8d6w3apa4gm8sxvlpv1g4xx4ab-source", "store_path_size": 11331264}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/intel/ARM_NEON_2_x86_SSE", "rev": "a15b489e1222b2087007546b4912e21293ea86ff"}
+{"hash": "sha256-299ZptvdTmCnIuVVBkrpf5ZTxKPwgcGUob81tEI91F0=", "store_path": "/nix/store/5fcmkqz6h711ykip9w9alksc8qdd5wgy-source", "store_path_size": 815465}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/cisco/openh264", "rev": "09a4f3ec842a8932341b195c5b01e141c8a16eb7"}
+{"hash": "sha256-J7Eqe2QevZh1xfap19W8AVCcwfRu7ztknnbKFJUAH1c=", "store_path": "/nix/store/8xcm80g4wvv7dczmwpiwdrfnd5zawavg-source", "store_path_size": 72575944}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/openscreen", "rev": "a3f9719bed95289c59771d4c4bcb85f5ecacac43"}
+{"hash": "sha256-wUKhF9sU1HAZvs4fQHxeFfxkpkhBp6nTljJrQ4lH7lA=", "store_path": "/nix/store/5fy74y94k2fwy6idzb2wi9hzdc74j7zk-source", "store_path_size": 22541490}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/src/buildtools", "rev": "0ac67b7cef80e421283f633ee9c2ce652f6e42cc"}
+{"hash": "sha256-SBorO59kMSnskcp3oP5lrGQg+9cr/Ymey2aZGlRTgu0=", "store_path": "/nix/store/q5s0lx6y7j7bwr3wxf0srw7m5hi1x4ih-source", "store_path_size": 247434}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/intel/tinycbor", "rev": "d393c16f3eb30d0c47e6f9d92db62272f0ec4dc7"}
+{"hash": "sha256-fMKBFUSKmODQyg4hKIa1hwnEKIV6WBbY1Gb8DOSnaHA=", "store_path": "/nix/store/4ppk9852ljhkdafsjvxslbz6g432xn1s-source", "store_path_size": 504510}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://pdfium.googlesource.com/pdfium", "rev": "e15b92e443568dac2dde59fe3af1ff6afb4e5662"}
+{"hash": "sha256-w6fVTw5hWKXT3pxPRARDkrH7ZWUPUbktjbTBHjd8JQ8=", "store_path": "/nix/store/frqcfssr6xq47mr2m8v9xz7xc07nslz2-source", "store_path_size": 34050328}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://android.googlesource.com/platform/external/perfetto", "rev": "a66020f87046d8934c22e20acb2bb8a91901ce8e"}
+{"hash": "sha256-FeI+nAa5N8mQoA8gDSmWn6nw6TSPhDGwJI8/7r/5z1c=", "store_path": "/nix/store/llqrnr3n0crlyzw9jffwydhwx53pawac-source", "store_path_size": 55908288}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/protocolbuffers/protobuf-javascript", "rev": "e34549db516f8712f678fcd4bc411613b5cc5295"}
+{"hash": "sha256-TmP6xftUVTD7yML7UEM/DB8bcsL5RFlKPyCpcboD86U=", "store_path": "/nix/store/755vdyipw3bv84mdyp6pl18va3mdwls9-source", "store_path_size": 2545712}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/Maratyszcza/pthreadpool", "rev": "4fe0e1e183925bf8cfa6aae24237e724a96479b8"}
+{"hash": "sha256-R4YmNzWEELSkAws/ejmNVxqXDTJwcqjLU/o/HvgRn2E=", "store_path": "/nix/store/fkamasmvpni999mnz06y8v9h9vmi0asg-source", "store_path_size": 932324}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromiumos/third_party/pyelftools", "rev": "19b3e610c86fcadb837d252c794cb5e8008826ae"}
+{"hash": "sha256-I/7p3IEvfP/gkes4kx18PvWwhAKilQKb67GXoW4zFB4=", "store_path": "/nix/store/0mkivvgidw086gfclshz4ijvaqyz1amj-source", "store_path_size": 4037324}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/quic-trace", "rev": "caa0a6eaba816ecb737f9a70782b7c80b8ac8dbc"}
+{"hash": "sha256-Nf9ZDLcE1JunhbpEMHhrY2ROnbgrvVZoRkPwWq1DU0g=", "store_path": "/nix/store/7ynh019apk1z2xang95nnhns5ykyb5gy-source", "store_path_size": 950808}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/GoogleChromeLabs/pywebsocket3", "rev": "50602a14f1b6da17e0b619833a13addc6ea78bc2"}
+{"hash": "sha256-WEqqu2/7fLqcf/2/IcD7/FewRSZ6jTgVlVBvnihthYQ=", "store_path": "/nix/store/bp866vg6sirdh55vzciw1fjrw0p5296n-source", "store_path_size": 496102}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/re2", "rev": "6598a8ecd57724c8c7d43b2fca8eb9f9969ce57c"}
+{"hash": "sha256-gB6vW6UJ60LrrGeNP6NKAcirIK6jgZjHRc6TA+pNXAQ=", "store_path": "/nix/store/yy89bi96y2aknmh3rc2rvj9wzyi9qlqa-source", "store_path_size": 1646669}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/ruy", "rev": "587c2cf8b11d3c32fa26887063eda3171a3d353e"}
+{"hash": "sha256-cwmKQJpR+7lp+dq8fGu6U8A+qmkXz6SlWvAdhBkKZOw=", "store_path": "/nix/store/wd6hfrp4plycxl6djnv1wiljxc480wfg-source", "store_path_size": 1689388}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://skia.googlesource.com/skia", "rev": "e7bf161ff959268a2a2f37530a6ea61c27019d33"}
+{"hash": "sha256-C36b26PTl5N2SpX+YMFdFN8+OA0C+pHWbutD+VIG8a0=", "store_path": "/nix/store/xk7ysp3d75qpyx46iymw9zw3pyvns4lp-source", "store_path_size": 149092097}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/smhasher", "rev": "e87738e57558e0ec472b2fc3a643b838e5b6e88f"}
+{"hash": "sha256-RyC//me08hwGXRrWcK8GZ1uhIkBq4FByA7fHCVDsniw=", "store_path": "/nix/store/vx14p89yh7f1xw30n9fzxdxrfbkdidvd-source", "store_path_size": 244959}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/snappy", "rev": "c9f9edf6d75bb065fa47468bf035e051a57bec7c"}
+{"hash": "sha256-5fV6NfO8vmqK+iCwpLtE2YjYOzjsshctauyjNIOxrH0=", "store_path": "/nix/store/1231kyf28bpgqrvc6x549a7h334gcx15-source", "store_path_size": 3335965}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/sqlite", "rev": "f51e3fa404f5853650525549c78d7489a7f457b3"}
+{"hash": "sha256-TsrSvL76H7SFhJWgHqyl8Y/BhAcnI9oaT2tUT6Ktan4=", "store_path": "/nix/store/zfb61gk3lbmnvg3h8x725w2imj4m2vh7-source", "store_path_size": 131796216}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://swiftshader.googlesource.com/SwiftShader", "rev": "bbe6452b420c5ddc4b0fd421b0a3ce271262f4ca"}
+{"hash": "sha256-tU0maePvL35JIVKFm+9hmPYDM81szLNYqUJyTKMHT0k=", "store_path": "/nix/store/pmlaqdjshhxw6f7zc6fgsiv94fy7brxl-source", "store_path_size": 1317270550}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/GoogleChromeLabs/text-fragments-polyfill", "rev": "c036420683f672d685e27415de0a5f5e85bdc23f"}
+{"hash": "sha256-4rW2u1cQAF4iPWHAt1FvVXIpz2pmI901rEPks/w/iFA=", "store_path": "/nix/store/dgaksmigfhwzg150633dnds7nbl2njah-source", "store_path_size": 473148}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/tensorflow/tensorflow", "rev": "55bc062601e4ee5a4efa834a84ae5c5ec6b28306"}
+{"hash": "sha256-Iqun3uMTCjGzHxUDeTCrvZufNtobnbqYVPDt7ZJ06wM=", "store_path": "/nix/store/89psx3pflhn907yy1pdl6l92ylmf0fgh-source", "store_path_size": 294870095}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/vulkan-deps", "rev": "3cebaae6743688201c8aa9b3694bba6948f0fa68"}
+{"hash": "sha256-MokWdjOP8Mc5hmoRrSXHXkobMPWbbmMzAMBOOoKG3gk=", "store_path": "/nix/store/7s19ah32rmly1i4criw1m8d339c2z6n1-source", "store_path_size": 53490}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/glslang", "rev": "9f37ad360ea1c32162f0cc1799b1b292594fc771"}
+{"hash": "sha256-lP+N1d6jE+Cj5ofomgMEhbA6VbH5eKw83mY6zNIOfNk=", "store_path": "/nix/store/jqcm4zi1bb2qhl343h1jbsrak82d2270-source", "store_path_size": 38907812}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/SPIRV-Cross", "rev": "b8fcf307f1f347089e3c46eb4451d27f32ebc8d3"}
+{"hash": "sha256-H43M9DXfEuyKuvo6rjb5k0KEbYOSFodbPJh8ZKY4PQg=", "store_path": "/nix/store/rqhnx38zzar40hnnr52vx6mv81c5hrw6-source", "store_path_size": 10960950}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/SPIRV-Headers", "rev": "8b246ff75c6615ba4532fe4fde20f1be090c3764"}
+{"hash": "sha256-kyOAwe4R0FmeA9IIJF2eoZR+7g9LiGKaZ7FuIfkrXJ4=", "store_path": "/nix/store/4z6f57qc9547bbvds8z81f5nlckkwvr4-source", "store_path_size": 3294822}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/SPIRV-Tools", "rev": "c6615779ef8a1eb5ef48fef77bf3eb2cf4f5438d"}
+{"hash": "sha256-/Cldtx75V+z3FuColEqwweyZHEqR2NaIj1Ha/vPoCsc=", "store_path": "/nix/store/6jrvv3scw4yzjjmca0cjp26lwdx2b4za-source", "store_path_size": 23067442}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/Vulkan-Headers", "rev": "577baa05033cf1d9236b3d078ca4b3269ed87a2b"}
+{"hash": "sha256-EnKiCtH6rh3ACQgokSSfp4FPFluMZW0dheP8IEzZtY4=", "store_path": "/nix/store/4d55jq73xr7306nbyphq06i6rcz8dwis-source", "store_path_size": 27221985}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/Vulkan-Loader", "rev": "61a9c50248e09f3a0e0be7ce6f8bb1663855f979"}
+{"hash": "sha256-zkJSPshRaZRDiBvLJbJo8l1MX10KXYZniqtNTNnokT4=", "store_path": "/nix/store/xwvfn9w0djxf9d393pm1i6wbxq3fjqv9-source", "store_path_size": 6910377}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/Vulkan-Tools", "rev": "733fd2b522918f81f9c4669350dafd066f99c5d5"}
+{"hash": "sha256-9qs0oS6W7x/1Z+wlFt91bqF09oxoloNPtjjH9mECJFk=", "store_path": "/nix/store/yqaz525mgd0vkdzqxvc2f6f2n6ghlq38-source", "store_path_size": 4371774}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/Vulkan-Utility-Libraries", "rev": "a4140c5fd47dcf3a030726a60b293db61cfb54a3"}
+{"hash": "sha256-mCD9/bpWUXRVJ+OyOqG0tXTgFuptIlcG6UR/RiNV1Z0=", "store_path": "/nix/store/cmvv1namr8kslwirsg5f537xry1xwpmg-source", "store_path_size": 1361154}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KhronosGroup/Vulkan-ValidationLayers", "rev": "5b8af92af052c83444ac560ff1e28c1c322424ef"}
+{"hash": "sha256-Bcm5yMo7JL/E6YZetlabkA0mkEFxbWriYNd8tRtgx5k=", "store_path": "/nix/store/217gc9fcsx2311d15waz8rifalcs2gb5-source", "store_path_size": 41880619}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator", "rev": "56300b29fbfcc693ee6609ddad3fdd5b7a449a21"}
+{"hash": "sha256-YzxHZagz/M8Y54UnI4h1wu5jSTuaOgv0ifC9d3fJZlQ=", "store_path": "/nix/store/r7hwrkyf72bwlvv9v20cdx8mqsx459ym-source", "store_path_size": 3775483}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/anongit.freedesktop.org/git/wayland/wayland", "rev": "c35d1a3d1c0a1735afe5eb227cb826faa878ec19"}
+{"hash": "sha256-YSo1DznmcaYSUcJl/3voVSfZfuLokAFQt6F3M1Iat28=", "store_path": "/nix/store/c1s3g6wlxhbvjvza930kccvisqw90ghj-source", "store_path_size": 1527065}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/anongit.freedesktop.org/git/wayland/wayland-protocols", "rev": "681c33c8547d6aefe24455ba2bffe1c5ae11fee5"}
+{"hash": "sha256-ljMcY59iOdGYeToadCuQ3t0lrBnsBdot+NiT6e+JJ04=", "store_path": "/nix/store/84p4a9r4fpv953lf1126c7av4vdibkph-source", "store_path_size": 585991}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/KDE/plasma-wayland-protocols", "rev": "0b07950714b3a36c9b9f71fc025fc7783e82926e"}
+{"hash": "sha256-Dmcp/2ms/k7NxPPmPkp0YNfM9z2Es1ZO0uX10bc7N2Y=", "store_path": "/nix/store/5g7w3inwx28dpnyfnwq8l15g99b309p1-source", "store_path_size": 236245}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/GNOME/gtk", "rev": "40ebed3a03aef096addc0af09fec4ec529d882a0"}
+{"hash": "sha256-75XNnLkF5Lt1LMRGT+T61k0/mLa3kkynfN+QWvZ0LiQ=", "store_path": "/nix/store/g64rm75yb41cpb3fgrxahv5j7aj25sx2-source", "store_path_size": 107635327}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/SeleniumHQ/selenium/py", "rev": "fc5e7e70c098bfb189a9a74746809ad3c5c34e04"}
+{"hash": "sha256-WIqWXIKVgElgg8P8laLAlUrgwodGdeVcwohZxnPKedw=", "store_path": "/nix/store/6d0pd227mn6i83s4pnggk7pkglfk39jn-source", "store_path_size": 1016110}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/khronosgroup/webgl", "rev": "f4bf599a8b575df685c31d9c4729a70a04e377ed"}
+{"hash": "sha256-dubsIPZKBGOzANGvMtQxFKFIHr0laDUGpzgRyEOjHMU=", "store_path": "/nix/store/gh8iypkkxfr0fw6436ba2mlj1jhv784h-source", "store_path_size": 84891307}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/gpuweb/cts", "rev": "addbf812fd750dc8cebbd63732e7ce54a763fbee"}
+{"hash": "sha256-/duXwmqanyI2KEnV5izvr0kE8tJNI1F1jMMIY0ylLH8=", "store_path": "/nix/store/5dv8y21ds1x2jb0505b6jv9kjdj0hzlv-source", "store_path_size": 50600385}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://webrtc.googlesource.com/src", "rev": "93e9ac6285bceef08e4c44c221ec57e8f7995b2f"}
+{"hash": "sha256-8SgGc5R94LJaUyXohA8DAqGc6AC/Dv1lu7UikdHaUck=", "store_path": "/nix/store/60g5cb3gz2xx8qdahhyj4wii23gr36pa-source", "store_path_size": 99012735}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://skia.googlesource.com/external/github.com/google/wuffs-mirror-release-c", "rev": "e3f919ccfe3ef542cfc983a82146070258fb57f8"}
+{"hash": "sha256-373d2F/STcgCHEq+PO+SCHrKVOo6uO1rqqwRN5eeBCw=", "store_path": "/nix/store/1ni58ry73x2m0lsap3k0x10s54af632n-source", "store_path_size": 2279676}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/anongit.freedesktop.org/git/wayland/weston", "rev": "ccf29cb237c3ed09c5f370f35239c93d07abfdd7"}
+{"hash": "sha256-y2srFaPUOoB2umzpo4+hFfhNlqXM2AoMGOpUy/ZSacg=", "store_path": "/nix/store/wpxd0hmnspbn3c2dssyd3a6mv90nnmwm-source", "store_path_size": 6903771}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/xdg-utils", "rev": "cb54d9db2e535ee4ef13cc91b65a1e2741a94a44"}
+{"hash": "sha256-WuQ9uDq+QD17Y20ACFGres4nbkeOiTE2y+tY1avAT5U=", "store_path": "/nix/store/wxqwf6dxryhch72d4p1j45j7a8jmd75l-source", "store_path_size": 1079378}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/google/XNNPACK", "rev": "7e696d941310a528dd2d6fbee3d499d19b24746d"}
+{"hash": "sha256-Cmw+rj805YTnnCwy2Zwzi2ZW4sdX5JWjTnBaUB6+YyU=", "store_path": "/nix/store/71jlkkwgyyyal7ai82b93qkm6rlc3yrl-source", "store_path_size": 229077361}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/chromium/deps/acid3", "rev": "a926d0a32e02c4c03ae95bb798e6c780e0e184ba"}
+{"hash": "sha256-s/49EaYQRsyxuLejXc1zGDYTD7uO0ddaQIJBP50Bvw0=", "store_path": "/nix/store/xbsix7scsx8wcfi96l6c96vybyvw6ys1-source", "store_path_size": 206720}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/external/github.com/facebook/zstd", "rev": "621a263fb2e6c2175fbd489e5d77ee8038baa2b2"}
+{"hash": "sha256-hWfYKiTzkmeiUTgNrSYXOFauusSVceVhD04Hgk69CK4=", "store_path": "/nix/store/zw6d0g2pnc4hd1af6ppxjb9z5ijvnhkw-source", "store_path_size": 8184754}
+
+
+
+{"fetcher": "fetchFromGitiles", "url": "https://chromium.googlesource.com/v8/v8", "rev": "f0dbf5b81854a664765a94ff82921d63ddc7114a"}
+{"hash": "sha256-90v6GaIdiOWUharzIXrbINmuklbFD5B5tpukzKHjTEQ=", "store_path": "/nix/store/jlwsvqnjpjv4ij7q9frfhzllawmwj06q-source", "store_path_size": 143970577}
